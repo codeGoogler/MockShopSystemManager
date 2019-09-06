@@ -18,10 +18,10 @@ public class Areas extends BaseBean<Areas>{
     private Integer propertity;
 
     // 创建时间
-    private String createTimer;
+    private String createTime;
 
     //更改时间
-    private String lastEditTimer;
+    private String lastModifyTime;
 
 
     @Override
