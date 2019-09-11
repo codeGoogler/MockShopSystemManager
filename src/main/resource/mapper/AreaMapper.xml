@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mock.manager.dao.AreaDao">
+
+   <!-- id对应的方法名字，resultType对应的是返回值，每天一条记录的返回值实体类-->
+    <select id="queryAllArea" resultType="com.mock.manager.entry.Areas">
+        select area_id,area_name,propertity,create_time,last_modify_time from  tab_area order by propertity desc ;
+    </select>
+
+
+</mapper>

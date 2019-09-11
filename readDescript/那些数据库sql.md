@@ -20,7 +20,7 @@ create TABLE tab_area2(
 
 
 
-create TABLE tab_area3(
+create TABLE tab_area(
 	area_id INT(2)  NOT NULL AUTO_INCREMENT,
   area_name VARCHAR(200) NOT NULL,
   propertity INT(2) DEFAULT 0,
