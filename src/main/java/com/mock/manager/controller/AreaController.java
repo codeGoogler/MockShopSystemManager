@@ -16,7 +16,7 @@ import java.util.List;
  * @version 1.0 </p> 修改时间：11/9/2019</br> 修改备注：</br>
  */
 @Controller
-@RestController("/area")
+@RequestMapping("/area")
 public class AreaController {
     @Autowired
     AreaService areaService;
@@ -25,11 +25,11 @@ public class AreaController {
     @RequestMapping(value = "/searchAll",method = RequestMethod.GET)
     @ResponseBody
     public String searchAll(){
-        List<Areas> list=  areaService.queryAllArea();
+      /*  List<Areas> list=  areaService.queryAllArea();
         for (int i = 0; i <list.size() ; i++) {
             Areas area = list.get(i);
             System.out.println(area);
-        }
+        }*/
         return "index";
     }
 }

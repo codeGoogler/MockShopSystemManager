@@ -48,5 +48,5 @@
 		</property>
 	</bean>
 	<!-- 4.扫描web相关的bean -->
-	<context:component-scan base-package="com.mock.manager.web" />
+	<context:component-scan base-package="com.mock.manager.controller" />
 </beans>
