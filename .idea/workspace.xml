@@ -7,40 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23b2e93e-02ab-42eb-8c48-3dcc538f5123" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/readDescript/数据库连接注意事项.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readDescript/相关的ssm的配置.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mock/manager/controller/AreaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mock/manager/dao/AreaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mock/manager/entry/BaseBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mock/manager/service/AreaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/AreaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/mapper/AreaMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/spring/spring-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/spring/spring-service.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/spring/spring-web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mock/manager/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mock/manager/dao/AreaDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mock/manager/dao/AreaServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readDescript/那些数据库sql.md" beforeDir="false" afterPath="$PROJECT_DIR$/readDescript/那些数据库sql.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.mock.manager/AA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mock/manager/AA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.mock.manager/entry/Areas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mock/manager/entry/Areas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.mock.manager/entry/BaseBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.mock.manager/entry/HeadLine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.mock.manager/entry/LocalAuth.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.mock.manager/entry/PersionInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.mock.manager/entry/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.mock.manager/entry/ProductCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.mock.manager/entry/ProductImg.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.mock.manager/entry/Shop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.mock.manager/entry/ShopCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.mock.manager/entry/WebchatAuth.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MockYuerSystemManager.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/MockYuerSystemManager.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MockYuerSystemManager/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MockYuerSystemManager/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mock/manager/controller/AreaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mock/manager/controller/AreaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mock/manager/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mock/manager/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mock/manager/dao/AreaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mock/manager/dao/AreaServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,6 +26,9 @@
     <SUITE FILE_PATH="coverage/MockYuerSystemManager$AreaDaoTest_testQueryAreaAll.ic" NAME="AreaDaoTest.testQueryAreaAll Coverage Results" MODIFIED="1568191493563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.mock.manager.dao.*</FILTER>
     </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="80" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -74,71 +49,71 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/dao/AreaServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+            <state relative-caret-position="510">
+              <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-service.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/Areas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+            <state relative-caret-position="442">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+              <folding>
+                <element signature="e#515#516#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+                <element signature="e#691#692#0" expanded="true" />
+                <element signature="e#739#740#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#817#818#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+                <element signature="e#984#985#0" expanded="true" />
+                <element signature="e#1017#1018#0" expanded="true" />
+                <element signature="e#1069#1070#0" expanded="true" />
+                <element signature="e#1113#1114#0" expanded="true" />
+                <element signature="e#1154#1155#0" expanded="true" />
+                <element signature="e#1191#1192#0" expanded="true" />
+                <element signature="e#1251#1252#0" expanded="true" />
+                <element signature="e#1303#1304#0" expanded="true" />
+                <element signature="e#1349#1350#0" expanded="true" />
+                <element signature="e#1393#1394#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resource/jdbc.properties">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/dao/AreaDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="408">
+              <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/BaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resource/mybatis-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://E:/englis_install/.m2/repository/org/springframework/spring-webmvc/4.3.4.RELEASE/spring-webmvc-4.3.4.RELEASE.jar!/org/springframework/web/servlet/config/spring-mvc-3.2.xsd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="330" column="12" selection-start-line="330" selection-start-column="12" selection-end-line="330" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://E:/englis_install/.m2/repository/org/springframework/spring-jdbc/4.3.4.RELEASE/spring-jdbc-4.3.4.RELEASE.jar!/org/springframework/jdbc/datasource/DataSourceTransactionManager.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/AreaController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="27" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="27" />
+            <state relative-caret-position="363">
+              <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,13 +122,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/BaseBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-dao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+            <state relative-caret-position="619">
+              <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
               <folding>
                 <element signature="e#969#987#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-service.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="661">
+              <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -180,6 +191,8 @@
       <find>RunWith</find>
       <find>connector</find>
       <find>jdbc</find>
+      <find>mapperScannerConfig</find>
+      <find>MapperScannerConfigurer</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -205,20 +218,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/dao/AreaDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/readDescript/那些数据库sql.md" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mock/manager/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mock/manager/dao/AreaDao.java" />
         <option value="$PROJECT_DIR$/src/main/resource/spring/spring-dao.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/readDescript/数据库连接注意事项.md" />
         <option value="$PROJECT_DIR$/src/main/resource/mapper/AreaMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/entry/Areas.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/service/AreaService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/AreaServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mock/manager/dao/AreaServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mock/manager/dao/AreaDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/controller/AreaController.java" />
         <option value="$PROJECT_DIR$/src/main/resource/spring/spring-service.xml" />
         <option value="$PROJECT_DIR$/src/main/resource/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/AreaServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mock/manager/dao/AreaServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mock/manager/BaseTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/controller/AreaController.java" />
       </list>
     </option>
   </component>
@@ -242,7 +255,27 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="MockYuerSystemManager Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="MockYuerSystemManager Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="26" />
     <option name="y" value="12" />
     <option name="width" value="1936" />
@@ -261,11 +294,6 @@
             <path>
               <item name="MockYuerSystemManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="MockYuerSystemManager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockYuerSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockYuerSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="readDescript" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MockYuerSystemManager" type="b2602c69:ProjectViewProjectNode" />
@@ -334,16 +362,6 @@
               <item name="MockYuerSystemManager" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockYuerSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockYuerSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -361,6 +379,21 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resource" type="462c0819:PsiDirectoryNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockYuerSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockYuerSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockYuerSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockYuerSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MockYuerSystemManager" type="b2602c69:ProjectViewProjectNode" />
@@ -455,6 +488,22 @@
       <option name="PACKAGE_NAME" value="com.mock.manager.dao" />
       <option name="MAIN_CLASS_NAME" value="com.mock.manager.dao.AreaServiceTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AreaServiceTest.testQueryAreaAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MockYuerSystemManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mock.manager.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mock.manager.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.mock.manager.dao.AreaServiceTest" />
+      <option name="METHOD_NAME" value="testQueryAreaAll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -626,6 +675,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AreaServiceTest.testQueryAreaAll" />
         <item itemvalue="JUnit.AreaServiceTest" />
         <item itemvalue="JUnit.AreaDaoTest.testQueryAreaAll" />
       </list>
@@ -646,32 +696,11 @@
       <workItem from="1567674629943" duration="5241000" />
       <workItem from="1567990343923" duration="14065000" />
       <workItem from="1568170014058" duration="6870000" />
-      <workItem from="1568182742701" duration="12600000" />
+      <workItem from="1568182742701" duration="24434000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AreaDaoTest_testQueryAreaAll - 2019.09.11 at 17h 04m 06s.xml">
-      <configuration name="AreaDaoTest.testQueryAreaAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AreaDaoTest_testQueryAreaAll - 2019.09.11 at 17h 04m 27s.xml">
-      <configuration name="AreaDaoTest.testQueryAreaAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AreaDaoTest_testQueryAreaAll - 2019.09.11 at 17h 13m 33s.xml">
-      <configuration name="AreaDaoTest.testQueryAreaAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AreaDaoTest_testQueryAreaAll - 2019.09.11 at 17h 13m 52s.xml">
-      <configuration name="AreaDaoTest.testQueryAreaAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AreaDaoTest_testQueryAreaAll - 2019.09.11 at 17h 16m 17s.xml">
-      <configuration name="AreaDaoTest.testQueryAreaAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AreaDaoTest_testQueryAreaAll - 2019.09.11 at 17h 17m 15s.xml">
-      <configuration name="AreaDaoTest.testQueryAreaAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AreaDaoTest_testQueryAreaAll - 2019.09.11 at 17h 23m 26s.xml">
-      <configuration name="AreaDaoTest.testQueryAreaAll" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AreaDaoTest_testQueryAreaAll - 2019.09.11 at 17h 23m 55s.xml">
       <configuration name="AreaDaoTest.testQueryAreaAll" configurationId="JUnit" />
     </history-entry>
@@ -681,12 +710,42 @@
     <history-entry file="AreaServiceTest - 2019.09.11 at 17h 47m 44s.xml">
       <configuration name="AreaServiceTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AreaServiceTest_testQueryAreaAll - 2019.09.12 at 10h 15m 07s.xml">
+      <configuration name="AreaServiceTest.testQueryAreaAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AreaServiceTest_testQueryAreaAll - 2019.09.12 at 11h 06m 24s.xml">
+      <configuration name="AreaServiceTest.testQueryAreaAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AreaServiceTest_testQueryAreaAll - 2019.09.12 at 11h 29m 50s.xml">
+      <configuration name="AreaServiceTest.testQueryAreaAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AreaServiceTest_testQueryAreaAll - 2019.09.12 at 11h 30m 00s.xml">
+      <configuration name="AreaServiceTest.testQueryAreaAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AreaServiceTest_testQueryAreaAll - 2019.09.12 at 11h 47m 33s.xml">
+      <configuration name="AreaServiceTest.testQueryAreaAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AreaServiceTest_testQueryAreaAll - 2019.09.12 at 11h 47m 39s.xml">
+      <configuration name="AreaServiceTest.testQueryAreaAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AreaServiceTest_testQueryAreaAll - 2019.09.12 at 11h 48m 11s.xml">
+      <configuration name="AreaServiceTest.testQueryAreaAll" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42121000" />
+    <option name="totallyTimeSpent" value="53955000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="26" y="12" width="1936" height="1031" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20149253" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -695,11 +754,11 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43263966" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42586398" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38611713" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.35005575" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
@@ -708,17 +767,31 @@
       <window_info anchor="bottom" id="Messages" order="12" weight="0.4171181" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Spring" order="14" />
-      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.11673774" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.11673774" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.20095949" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/AreaService.java</url>
+          <line>13</line>
+          <properties class="com.mock.manager.service.AreaService" method="queryAllArea">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com.mock.manager/entry/Base.java" />
@@ -762,13 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -783,13 +849,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/BaseBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -923,13 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="53" column="17" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="53" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/AA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -967,10 +1019,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/BaseTest.java">
+    <entry file="jar://E:/englis_install/.m2/repository/org/springframework/spring-jdbc/4.3.4.RELEASE/spring-jdbc-4.3.4.RELEASE.jar!/org/springframework/jdbc/datasource/DataSourceTransactionManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="102">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/englis_install/.m2/repository/org/springframework/spring-webmvc/4.3.4.RELEASE/spring-webmvc-4.3.4.RELEASE.jar!/org/springframework/web/servlet/config/spring-mvc-3.2.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="330" column="12" selection-start-line="330" selection-start-column="12" selection-end-line="330" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/dao/AreaDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/AreaServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/AreaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -979,15 +1081,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/AreaMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="84" selection-start-line="9" selection-start-column="84" selection-end-line="9" selection-end-column="84" />
+        <state relative-caret-position="221">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/BaseBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/Areas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="73" column="36" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+        <state relative-caret-position="442">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding>
             <element signature="e#515#516#0" expanded="true" />
             <element signature="e#544#545#0" expanded="true" />
@@ -1010,60 +1126,43 @@
             <element signature="e#1251#1252#0" expanded="true" />
             <element signature="e#1303#1304#0" expanded="true" />
             <element signature="e#1349#1350#0" expanded="true" />
-            <element signature="e#1388#1389#0" expanded="true" />
+            <element signature="e#1393#1394#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/dao/AreaDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-service.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="459">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/AreaServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/AreaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="661">
+          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/dao/AreaDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="29" selection-end-column="9" />
+        <state relative-caret-position="408">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/dao/AreaServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        <state relative-caret-position="510">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/AreaController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="27" />
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1072,53 +1171,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-dao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+        <state relative-caret-position="619">
+          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
           <folding>
             <element signature="e#969#987#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/englis_install/.m2/repository/org/springframework/spring-jdbc/4.3.4.RELEASE/spring-jdbc-4.3.4.RELEASE.jar!/org/springframework/jdbc/datasource/DataSourceTransactionManager.class">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="105">
+          <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/AreaController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/englis_install/.m2/repository/org/springframework/spring-webmvc/4.3.4.RELEASE/spring-webmvc-4.3.4.RELEASE.jar!/org/springframework/web/servlet/config/spring-mvc-3.2.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="330" column="12" selection-start-line="330" selection-start-column="12" selection-end-line="330" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="363">
+          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

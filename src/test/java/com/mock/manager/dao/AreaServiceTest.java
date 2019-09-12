@@ -3,6 +3,7 @@ package com.mock.manager.dao;
 import com.mock.manager.BaseTest;
 import com.mock.manager.entry.Areas;
 import com.mock.manager.service.AreaService;
+import com.mock.manager.service.impl.AreaServiceImpl;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
