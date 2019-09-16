@@ -89,6 +89,22 @@ ${user1}
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14371339-b55c3b37bb71f1ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-原文作者：  ethan__xu
+####  第一种编码的修改：File-->Settings-->Editor-->File Encodings
+ 
+ 将这三个地方都设置成UTF-8，使文件的编码格式都是UTF-8（不过这个貌似跟Tomcat乱码没多大关系）
+ 
+ ![ ](https://upload-images.jianshu.io/upload_images/14371339-4599547bbab8e594?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+ 
+ 第三种：在...\JetBrains\IntelliJ IDEA 2018.1.5\bin   目录下找到idea.exe.vmoptions（64位idea64.exe.vmoptions）
+ 
+ 增加一条  -Dfile.encoding=UTF-8
+ 
+ 
+ 
+ ![ ](https://upload-images.jianshu.io/upload_images/14371339-c71e17c222d03068?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+ 
+ 
+ 目前我认为是这三种方式一起用然后我的问题就解决了...
+  
 
-链接：https://blog.csdn.net/ethan__xu/article/details/81193228
+ 

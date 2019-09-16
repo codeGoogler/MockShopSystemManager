@@ -1,7 +1,10 @@
 package com.mock.manager.controller;
 
+
 import com.mock.manager.entry.Areas;
 import com.mock.manager.service.AreaService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,6 +21,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/area")
 public class AreaController {
+    Logger logger = LoggerFactory.getLogger(AreaController.class);
     @Autowired
     AreaService areaService;
 
@@ -25,11 +29,16 @@ public class AreaController {
     @RequestMapping(value = "/searchAll",method = RequestMethod.GET)
     @ResponseBody
     public String searchAll(){
-      /*  List<Areas> list=  areaService.queryAllArea();
+        logger.info("========start===============");
+        long startTime = System.currentTimeMillis();
+      List<Areas> list=  areaService.queryAllArea();
         for (int i = 0; i <list.size() ; i++) {
             Areas area = list.get(i);
             System.out.println(area);
-        }*/
+        }
+        long endTime = System.currentTimeMillis();
+        logger.debug("所用的时间[{}ms]",endTime-startTime);
+        logger.info("============end==============");
         return "index";
     }
 }
