@@ -1,7 +1,7 @@
 package com.mock.manager.service.impl;
 
 import com.mock.manager.dao.AreaDao;
-import com.mock.manager.entry.Areas;
+import com.mock.manager.entry.Area;
 import com.mock.manager.service.AreaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,7 +21,7 @@ public class AreaServiceImpl implements AreaService {
     private AreaDao areaDao;
 
     @Override
-    public List<Areas> queryAllArea() {
+    public List<Area> queryAllArea() {
         return  areaDao.queryAllArea();
     }
 }

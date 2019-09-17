@@ -1,6 +1,6 @@
 package com.mock.manager.service;
 
-import com.mock.manager.entry.Areas;
+import com.mock.manager.entry.Area;
 
 import java.util.List;
 
@@ -11,5 +11,5 @@ import java.util.List;
  * @version 1.0 </p> 修改时间：11/9/2019</br> 修改备注：</br>
  */
 public interface AreaService {
-    List<Areas> queryAllArea();
+    List<Area> queryAllArea();
 }

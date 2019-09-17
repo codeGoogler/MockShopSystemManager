@@ -1,44 +1,98 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<configuration debug="false">
-	<appender name="INFO-FILE"
-		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${catalina.base}/webapps/myo2o/logs/info/info.log</file>
-		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>${catalina.base}/webapps/myo2o/logs/info/info.%d{yyyy-MM-dd}.%i.log.zip</fileNamePattern>
-			<timeBasedFileNamingAndTriggeringPolicy
-				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-				<maxFileSize>1024MB</maxFileSize>
-			</timeBasedFileNamingAndTriggeringPolicy>
-			<maxHistory>30</maxHistory>
-		</rollingPolicy>
-		<layout class="ch.qos.logback.classic.PatternLayout">
-			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{55} -
-				%msg%n
-			</pattern>
-		</layout>
+<?xmI version= "1.0" encoding= "UTF-8?>
+
+<configuration scan= "true" scanPeriod= "60 seconds" debug= "false">
+
+	<!--定义参数常量  -->
+	<!-- TRACE<DEBUG <INFO <WARN< ERROR -->
+	<!-- logger.trace("msg") logger.debug... -->
+	<property name= "log.level" value= "debug" />
+	<property name= "log.maxHistory" value= "30" />
+	<property name= "log.filePath" value= "${catalina.base}/logs/webapps"/>
+<!--	<property name= "log.pattern" value= "%d{yyyy-MM-dd HH:mm:ss.SSS}[%thread]%-5level%logger{50}-%msg%n" />-->
+	<pattern name= "log.pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level  %logger{50} - %msg%n"/>
+
+	<!-- 控制台设置 -->
+
+	<appender name= "consoleAppender" class= "ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern> ${log.pattern}/info.log </pattern>
+		</encoder>
 	</appender>
-	<appender name="ACCESS-FILE"
-		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>
-			${catalina.base}/webapps/myo2o/logs/access/access.log</file>
-		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<FileNamePattern>${catalina.base}/webapps/myo2o/logs/access/access.%d{yyyy-MM-dd}.%i.log.zip</FileNamePattern>
-			<timeBasedFileNamingAndTriggeringPolicy
-				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-				<maxFileSize>1024MB</maxFileSize>
-			</timeBasedFileNamingAndTriggeringPolicy>
-			<maxHistory>30</maxHistory>
+	<!-- DEBUG -->
+	<appender name= "debugAppender" class= "ch.qos.logback.core.rolling.RollingFileAppender">
+
+		<!-- 文件路径 -->
+		<file>${log.pattern}/debug.log</file>
+		<rollingPolicy class= "ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- 文件名称 -->
+			<fileNamePattern> ${log.filePath}/debug/debug.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+			<!-- 文件保存最大历史数量 -->
+			<maxHitory> ${log.maxHistory} </maxHitory>
 		</rollingPolicy>
-		<layout class="ch.qos.logback.classic.PatternLayout">
-			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{55} -
-				%msg%n
-			</pattern>
-		</layout>
+		<encoder>
+			<pattern> ${log.pattern} </pattern>
+		</encoder>
+		<filter class= "ch.qos.logback.classic.filter.LevelFilter">
+			<level> DEBUG </level>
+			<onMatch> ACCEPT</onMatch>
+			<onMismatch> DENY </onMismatch>
+		</filter>
 	</appender>
-	<logger name="com.mock.manager" level="DEBUG" additivity="false">
-		<appender-ref ref="ACCESS-FILE" />
+
+	<!-- Info -->
+	<appender name= "infoAppender" class= "ch.qos.logback.core.rolling.RollingFileAppender">
+
+		<!-- 文件路径 -->
+		<file>${log.pattern}/info.log</file>
+		<rollingPolicy class= "ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- 文件名称 -->
+			<fileNamePattern> ${log.filePath}/info/info.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+			<!-- 文件保存最大历史数量 -->
+			<maxHitory> ${log.maxHistory} </maxHitory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${log.pattern} </pattern>
+		</encoder>
+		<filter class= "ch.qos.logback.classic.filter.LevelFilter">
+			<level> INFO </level>
+			<onMatch> ACCEPT</onMatch>
+			<onMismatch> DENY </onMismatch>
+		</filter>
+	</appender>
+
+	<!-- Error -->
+	<appender name= "errorAppender" class= "ch.qos.logback.core.rolling.RollingFileAppender">
+
+		<!-- 文件路径 -->
+		<file>${log.pattern}/error.log</file>
+		<rollingPolicy class= "ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- 文件名称 -->
+			<fileNamePattern> ${log.filePath}/error/error.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+			<!-- 文件保存最大历史数量 -->
+			<maxHitory> ${log.maxHistory} </maxHitory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${log.pattern} </pattern>
+		</encoder>
+		<filter class= "ch.qos.logback.classic.filter.LevelFilter">
+			<level> ERROR </level>
+			<onMatch> ACCEPT</onMatch>
+			<onMismatch> DENY </onMismatch>
+		</filter>
+	</appender>
+
+
+	<logger name= "com.mock.manager" level= "${log.level}" additivity="true">
+
+		<appender-ref ref= "debugAppender"/>
+		<appender-ref ref= "infoAppender"/>
+		<appender-ref ref= "errorAppender"/>
 	</logger>
-	<root level="INFO">
-		<appender-ref ref="INFO-FILE" />
+
+	<!--<root level= "INFO">  INFO要大写-->
+	<root level= "INFO">
+		<appender-ref ref= "consoleAppender"/>
 	</root>
+
 </configuration>
+

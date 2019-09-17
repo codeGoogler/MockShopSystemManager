@@ -1,12 +1,11 @@
 package com.mock.manager.dao;
 
 import com.mock.manager.BaseTest;
-import com.mock.manager.entry.Areas;
+import com.mock.manager.entry.Area;
 import com.mock.manager.service.AreaService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.awt.geom.Area;
 import java.util.List;
 
 /**
@@ -23,12 +22,11 @@ public class AreaDaoTest extends BaseTest {
 
     @Test
     public void testQueryAreaAll(){
-        List<Areas> list =  areaDao.queryAllArea();
+        List<Area> list =  areaDao.queryAllArea();
         for (int i = 0; i <list.size() ; i++) {
-            Areas area = list.get(i);
+            Area area = list.get(i);
             System.out.println(area);
         }
-
        /* list.stream().filter(student -> student != null).forEach(student -> {
             if (student.getAreaId() != 0) System.out.println(student.toString());
         });*/

@@ -1,7 +1,7 @@
 package com.mock.manager.controller;
 
 
-import com.mock.manager.entry.Areas;
+import com.mock.manager.entry.Area;
 import com.mock.manager.service.AreaService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,9 +31,9 @@ public class AreaController {
     public String searchAll(){
         logger.info("========start===============");
         long startTime = System.currentTimeMillis();
-      List<Areas> list=  areaService.queryAllArea();
+      List<Area> list=  areaService.queryAllArea();
         for (int i = 0; i <list.size() ; i++) {
-            Areas area = list.get(i);
+            Area area = list.get(i);
             System.out.println(area);
         }
         long endTime = System.currentTimeMillis();

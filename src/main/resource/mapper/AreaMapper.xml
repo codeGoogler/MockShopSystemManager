@@ -6,7 +6,7 @@
 <mapper namespace="com.mock.manager.dao.AreaDao">
 
    <!-- id对应的方法名字，resultType对应的是返回值，每天一条记录的返回值实体类-->
-    <select id="queryAllArea" resultType="com.mock.manager.entry.Areas">
+    <select id="queryAllArea" resultType="com.mock.manager.entry.Area">
         select area_id,area_name,propertity,create_time,last_modify_time from  tab_area order by propertity desc ;
     </select>
 

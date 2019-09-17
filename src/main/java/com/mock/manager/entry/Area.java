@@ -6,10 +6,10 @@ package com.mock.manager.entry;
  * @author yuyahao
  * @version 1.0 </p> 修改时间：2019/9/5</br> 修改备注：</br>
  */
-public class Areas extends BaseBean<Areas>{
+public class Area extends BaseBean<Area>{
 
     //地区id
-    private Integer areaId;
+    private int areaId;
 
     //地区名字
     private String areaName;
@@ -25,7 +25,7 @@ public class Areas extends BaseBean<Areas>{
 
 
     @Override
-    public  Areas parseModel(String obj) {
+    public  Area parseModel(String obj) {
         return null;
     }
 
