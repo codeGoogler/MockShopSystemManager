@@ -10,8 +10,8 @@ public class ShopCategory {
 	private String shopCategoryImg;
 	private Integer priority;
 	private Date createTime;
-	private Date lastEditTime;
-	private Long parentId;
+	private Date lastModifyime;
+	private ShopCategory parent;
 
 	public Long getShopCategoryId() {
 		return shopCategoryId;
@@ -61,20 +61,19 @@ public class ShopCategory {
 		this.createTime = createTime;
 	}
 
-	public Date getLastEditTime() {
-		return lastEditTime;
+	public Date getLastModifyime() {
+		return lastModifyime;
 	}
 
-	public void setLastEditTime(Date lastEditTime) {
-		this.lastEditTime = lastEditTime;
+	public void setLastModifyime(Date lastModifyime) {
+		this.lastModifyime = lastModifyime;
 	}
 
-	public Long getParentId() {
-		return parentId;
+	public ShopCategory getParent() {
+		return parent;
 	}
 
-	public void setParentId(Long parentId) {
-		this.parentId = parentId;
+	public void setParent(ShopCategory parent) {
+		this.parent = parent;
 	}
-
 }

@@ -17,11 +17,7 @@
 
     <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
     <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
-
     <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-114x114.png">
-    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
-    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
-    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
 
 
     <script>
@@ -64,7 +60,7 @@
                             <div class="item-inner">
                                 <div class="item-title label">商铺名称</div>
                                 <div class="item-input">
-                                    <input type="text" placeholder="您填写您的商铺名称">
+                                    <input type="text" id="shop_name" placeholder="您填写您的商铺名称">
                                 </div>
                             </div>
                         </div>
@@ -153,15 +149,24 @@
                         </div>
                     </li>
 
-            <div class="content-block">
-                <div class="row">
-                    <div class="col-50"><a href="#" class="button button-big button-fill button-danger">取消</a></div>
-                    <div class="col-50"><a href="#" class="button button-big button-fill button-success">提交</a></div>
-                </div>
+
+                    <div class="content-block">
+                        <div class="row">
+                            <div class="col-50" id="cancle"> <a href="#" class="button button-big button-fill button-danger">返回上一层</a></div>
+                            <div class="col-50" id="submit"><a href="#" class="button button-big button-fill button-success">提交</a></div>
+                        </div>
+                    </div>
+                </ul>
             </div>
         </div>
-    </div>
 
+    </div>
 </div>
+
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='../resource/js/shop/operate.js' charset='utf-8'></script>
+
 </body>
 </html>

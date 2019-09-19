@@ -36,7 +36,7 @@ create TABLE tab_area3(
 create table tab_persion_info(
 	user_id int(10) PRIMARY key AUTO_INCREMENT NOT NULL ,
   name VARCHAR(5) NOT NULL,
-  avg_img varchar(20) DEFAULT NULL,
+  avg_img varchar(200) DEFAULT NULL,
   email varchar(10) DEFAULT NULL,
   gender varchar(100) DEFAULT NULL,
   enable_tatus int(2) NOT NULL DEFAULT 0 COMMENT"0禁止登录本商场，1允许 使用该商场",
@@ -68,7 +68,7 @@ create TABLE tab_area(
 CREATE TABLE `tab_persion_info` (
   `user_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(5) NOT NULL,
-  `avg_img` varchar(20) DEFAULT NULL,
+  `avg_img` varchar(200) DEFAULT NULL,
   `email` varchar(10) DEFAULT NULL,
   `gender` varchar(100) DEFAULT NULL,
   `enable_tatus` int(2) NOT NULL DEFAULT '0' COMMENT '0禁止登录本商场，1允许 使用该商场',
@@ -120,10 +120,10 @@ create table tab_head_line(
 
 
 create table tab_shop_cate_gory(
-	shop_category_id int(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  shop_category_id int(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   shop_category_name VARCHAR(10)NOT NULL,
   shop_category_desc varchar(100) DEFAULT NULL,
-  shop_category_img varchar(20) DEFAULT NULL,
+  shop_category_img varchar(200) DEFAULT NULL,
   priority INTEGER(2),
   enable_status INTEGER(2),
   create_time datetime DEFAULT NULL,
@@ -143,7 +143,7 @@ create table tab_shop(
   shop_name VARCHAR(10)NOT NULL,
   shop_desc varchar(100) DEFAULT NULL,
   shop_addr varchar(50) DEFAULT NULL,
-  shop_img varchar(20) DEFAULT NULL,
+  shop_img varchar(200) DEFAULT NULL,
   priority INTEGER(2),
   enable_status INTEGER(2) NOT NULL DEFAULT -1 COMMENT '-1 不可用 0 审核中 1可用',
   create_time datetime DEFAULT NULL,
@@ -161,7 +161,7 @@ create TABLE tab_product_cate_gory(
   product_category_id int(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   shop_id int(10)NOT NULL,
   product_category_name varchar(40) DEFAULT NULL,
-  shop_category_img varchar(20) DEFAULT NULL,
+  shop_category_img varchar(200) DEFAULT NULL,
   priority INTEGER(2),
   create_time datetime DEFAULT NULL,
   FOREIGN KEY(shop_id) REFERENCES tab_shop(shop_id)
@@ -173,7 +173,7 @@ create TABLE tab_product(
   product_name varchar(40) DEFAULT NULL,
   product_desc varchar(10) DEFAULT NULL,
   product_addr varchar(10) DEFAULT NULL,
-  img_addr varchar(10) DEFAULT NULL,
+  img_addr varchar(200) DEFAULT NULL,
   normble_price varchar(10) DEFAULT NULL,
   promition_price varchar(10) DEFAULT NULL,
   priority INTEGER(2),
@@ -212,5 +212,8 @@ show CREATE TABLE tab_area1
 
 
 
-
+修改列属性：
+修改表字段的长度：
+alter table 表名 modify 字段名 varchar();
+alter table T_CONTRACT modify YY_FILENAME  varchar2(300);
 

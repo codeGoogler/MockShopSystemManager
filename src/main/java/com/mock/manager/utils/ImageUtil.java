@@ -69,6 +69,7 @@ public class ImageUtil {
 	}
 
 	private static String getFileExtension(CommonsMultipartFile cFile) {
+	    // file.getOriginalFilename()是得到上传时的文件名
 		String originalFileName = cFile.getOriginalFilename();
 		return originalFileName.substring(originalFileName.lastIndexOf("."));
 	}

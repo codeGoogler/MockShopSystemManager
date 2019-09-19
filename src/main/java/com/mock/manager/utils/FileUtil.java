@@ -60,11 +60,11 @@ public class FileUtil {
 	}
 
 	public static String getRandomFileName() {
-		// 生成随机文件名：当前年月日时分秒+五位随机数（为了在实际项目中防止文件同名而进行的处理）
-		int rannum = (int) (r.nextDouble() * (99999 - 10000 + 1)) + 10000; // 获取随机数
-		String nowTimeStr = sDateFormat.format(new Date()); // 当前时间
-		return nowTimeStr + rannum;
-	}
+        // 生成随机文件名：当前年月日时分秒+五位随机数（为了在实际项目中防止文件同名而进行的处理）
+        int rannum = (int) (r.nextDouble() * (99999 - 10000 + 1)) + 10000; // 获取随机数
+        String nowTimeStr = sDateFormat.format(new Date()); // 当前时间
+        return nowTimeStr + rannum;
+    }
 
 	public static void deleteFile(String storePath) {
 		File file = new File(getImgBasePath() + storePath);

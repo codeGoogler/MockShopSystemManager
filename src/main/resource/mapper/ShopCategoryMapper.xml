@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mock.manager.dao.ShopCategoryDao">
+
+    <select id="getShopCategoryList" resultType="com.mock.manager.entry.ShopCategory">
+      select
+      shop_category_id,
+      shop_category_name,
+      shop_category_desc,
+      shop_category_img,
+      priority,
+      create_time,
+      last_modify_time,
+      parent_id
+      from tab_shop_cate_gory
+      <where>
+            <if test="ShopCategoryCondition != null"> and parent_id is not  null </if>
+            <if test="ShopCategoryCondition.parent != null"> and parent_id = #{ShopCategoryCondition.parent.shopCategoryId}</if>
+      </where>
+        order by priority desc
+    </select>
+
+
+</mapper>
