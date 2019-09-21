@@ -160,10 +160,6 @@ public class Shop {
 		this.advice = advice;
 	}
 
-	public String toString() {
-		return "[shopId=" + shopId + ", shopName=" + shopName + "]";
-	}
-
 
 	public PersonInfo getOwner() {
 		return owner;
@@ -171,5 +167,27 @@ public class Shop {
 
 	public void setOwner(PersonInfo owner) {
 		this.owner = owner;
+	}
+
+	@Override
+	public String toString() {
+		return "Shop{" +
+				"shopId=" + shopId +
+				", shopName='" + shopName + '\'' +
+				", shopDesc='" + shopDesc + '\'' +
+				", shopAddr='" + shopAddr + '\'' +
+				", phone='" + phone + '\'' +
+				", shopImg='" + shopImg + '\'' +
+				", longitude=" + longitude +
+				", latitude=" + latitude +
+				", priority=" + priority +
+				", createTime=" + createTime +
+				", lastModifyTime=" + lastModifyTime +
+				", enableStatus=" + enableStatus +
+				", advice='" + advice + '\'' +
+				", area=" + area +
+				", owner=" + owner +
+				", shopCategory=" + shopCategory +
+				'}';
 	}
 }

@@ -53,20 +53,22 @@ public class ShopController {
     @RequestMapping(value = "/regisitShop",method = RequestMethod.POST)
     @ResponseBody
     public HashMap<String,Object> insertShop(HttpServletRequest httpServletRequest){
-
+        System.out.print("httpServletRequest: " +httpServletRequest+"\n");
         HashMap<String,Object> hashMap = new HashMap<>();
 
         //接收参数， 注册店铺，返回结果
         String shopBody = HttpServletRequestUtils.getString(httpServletRequest,"shopBody");
+
+        System.out.print("shopBody: " +shopBody+"\n");
         ObjectMapper mapper = new ObjectMapper(); // create once, reuse
         Shop shop = null;
         try {
              shop =  mapper.readValue(shopBody,Shop.class);
-
+            System.out.print("shopBody: " +shopBody+"\n");
         } catch (IOException e) {
             hashMap.put("status",1004);
             hashMap.put("success",false);
-            hashMap.put("message","添加店铺失败");
+            hashMap.put("message","添加店铺失败"+e.getMessage());
         }
 
         // 判断图片
@@ -80,16 +82,19 @@ public class ShopController {
             hashMap.put("success",false);
             hashMap.put("message","图片不能为空");
         }
-
+        System.out.print("shop: " +shop+"   "+shopImgFile+"\n");
         if(shop != null && shopImgFile != null){
             PersonInfo personInfo = new PersonInfo();
             personInfo.setUserId(1l);
             shop.setOwner(personInfo);
-
-            File file = new File(FileUtil.getImgBasePath()+ FileUtil.getRandomFileName());
+            System.out.print("用户上传的全路径：  "+shopImgFile.getOriginalFilename()+"    "+shopImgFile.getName()+"\n");
+            File file = new File(FileUtil.getImgBasePath()+ FileUtil.getRandomFileName()+""+shopImgFile.getOriginalFilename());
+            System.out.print("新建文件的全路径：  "+file.getAbsolutePath()+"   " +file.getName()+"\n");
             try {
                 mutilpartFileToFile(shopImgFile.getInputStream(),file);
-                ShopResponseExcuttion shopResponseExcuttion = shopService.insertShop(shop,file);
+                System.out.print("temp文件的路径：  "+file.getAbsolutePath()+"\n");
+                ShopResponseExcuttion shopResponseExcuttion = shopService.insertShop(shop, file);
+//                ShopResponseExcuttion shopResponseExcuttion = shopService.insertShop(shop, new File("J:\\springCloud\\dest.jpeg"));
                 if(shopResponseExcuttion.getState() == ShopStateEnum.CHECK.getState()){
                     hashMap.put("status",200);
                     hashMap.put("success",true);
@@ -144,7 +149,7 @@ public class ShopController {
             int readByte = 0;
             byte [] butter = new byte[1024];
             while ((readByte = shopImg.read(butter)) != -1){
-                outputStream.write(readByte);
+                outputStream.write(butter,0,readByte);
             }
 
         } catch (Exception e) {

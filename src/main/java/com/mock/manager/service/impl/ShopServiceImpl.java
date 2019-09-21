@@ -43,6 +43,7 @@ public class ShopServiceImpl implements ShopService {
         if(shop == null){
             throw  new RuntimeException("添加失败，shop不能为空");
         }
+
         //这个时候传过来的时候已经是有部分值了
         try {
             shop.setCreateTime(new Date());
