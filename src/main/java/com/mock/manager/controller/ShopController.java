@@ -88,13 +88,8 @@ public class ShopController {
             personInfo.setUserId(1l);
             shop.setOwner(personInfo);
             System.out.print("用户上传的全路径：  "+shopImgFile.getOriginalFilename()+"    "+shopImgFile.getName()+"\n");
-            File file = new File(FileUtil.getImgBasePath()+ FileUtil.getRandomFileName()+""+shopImgFile.getOriginalFilename());
-            System.out.print("新建文件的全路径：  "+file.getAbsolutePath()+"   " +file.getName()+"\n");
             try {
-                mutilpartFileToFile(shopImgFile.getInputStream(),file);
-                System.out.print("temp文件的路径：  "+file.getAbsolutePath()+"\n");
-                ShopResponseExcuttion shopResponseExcuttion = shopService.insertShop(shop, file);
-//                ShopResponseExcuttion shopResponseExcuttion = shopService.insertShop(shop, new File("J:\\springCloud\\dest.jpeg"));
+                ShopResponseExcuttion shopResponseExcuttion = shopService.insertShop(shop, shopImgFile.getInputStream(),shopImgFile.getOriginalFilename());
                 if(shopResponseExcuttion.getState() == ShopStateEnum.CHECK.getState()){
                     hashMap.put("status",200);
                     hashMap.put("success",true);

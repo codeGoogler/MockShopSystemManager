@@ -141,9 +141,13 @@
                     <li>
                         <div class="item-content">
                             <div class="item-inner">
-                                <div class="item-title label">Password</div>
+                                <div class="item-title label">验证码</div>
                                 <div class="item-input">
-                                    <input type="password" placeholder="Password" class="">
+                                    <input type="text" placeholder="验证码" id="jk_kapcha">
+                                </div>
+                                <div class="item-input">
+                                    <img src="../Kapcha" id="kapcha_img" onclick="changeVertify(this)"
+                                    alt="点击更换" title="点击更换">
                                 </div>
                             </div>
                         </div>

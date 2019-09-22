@@ -4,6 +4,7 @@ import com.mock.manager.dto.ShopResponseExcuttion;
 import com.mock.manager.entry.Shop;
 
 import java.io.File;
+import java.io.InputStream;
 
 /**
  * 类功能描述：</br>
@@ -20,7 +21,7 @@ public interface ShopService {
      * @return
      */
 //    int insertShop(Shop shop);
-    ShopResponseExcuttion insertShop(Shop shop, File file);
+    ShopResponseExcuttion insertShop(Shop shop, InputStream shopImgInputstream,String name);
 
     /**
      * 更新店铺信息
@@ -28,5 +29,5 @@ public interface ShopService {
     int updateShop(Shop shop);
 
 
-    ShopResponseExcuttion insertShop2(Shop shop, File file);
+    ShopResponseExcuttion insertShop2(Shop shop, InputStream shopImgInputstream, String shopImgame);
 }

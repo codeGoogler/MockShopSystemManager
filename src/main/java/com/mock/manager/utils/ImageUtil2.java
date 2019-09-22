@@ -7,24 +7,33 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ImageUtil2 {
 	public static final String BASEUSL = Thread.currentThread().getContextClassLoader().getResource("").getPath();
 
-	public static String generateThumbnail(File thumbnail, String targetAddr) {
+    /**
+     * 把一个文件流处理指定的格式
+     * @param shopImgInputstream
+     * @param shopImgFileName
+     * @param targetAddr
+     * @return
+     */
+	public static String generateThumbnail(InputStream shopImgInputstream, String shopImgFileName, String targetAddr) {
 		String realFileName = FileUtil.getRandomFileName();
 		System.out.print("realFileName: " + realFileName+" \n");
-		String extension = getFileExtension(thumbnail);
+		String extension = getFileExtension(shopImgFileName);
 		System.out.print("extension: " + extension+" \n");
 		makeDirPath(targetAddr);
 		String relativeAddr = targetAddr + realFileName + extension;
 		System.out.print("dest path: " + FileUtil.getImgBasePath() + relativeAddr+" \n");
 		File dest = new File(FileUtil.getImgBasePath() + relativeAddr);
 		try {
-			Thumbnails.of(thumbnail).size(200, 200).outputQuality(0.25f).toFile(dest);
+			Thumbnails.of(shopImgInputstream).size(200, 200).outputQuality(0.25f).toFile(dest);
 		} catch (IOException e) {
 			throw new RuntimeException("创建缩略图失败：" + e.toString());
 		}
@@ -44,7 +53,7 @@ public class ImageUtil2 {
 		//获取上传图片的宽高
 		BufferedImage bi =ImageIO.read(file);
 		System.out.print("图片的信息： "+bi.getWidth()+ "      "+bi.getHeight()+"\n");
-		generateThumbnail(file,targetAddr);
+		generateThumbnail(new FileInputStream(file),file.getName(),targetAddr);
 
 		//测试添加 水印
 		System.out.print("BASEUSL: "+ BASEUSL);
@@ -99,6 +108,10 @@ public class ImageUtil2 {
 
 	private static String getFileExtension(File cFile) {
 		String originalFileName = cFile.getName();
+		return originalFileName.substring(originalFileName.lastIndexOf("."));
+	}
+	private static String getFileExtension(String cFileName) {
+		String originalFileName = cFileName;
 		return originalFileName.substring(originalFileName.lastIndexOf("."));
 	}
 }

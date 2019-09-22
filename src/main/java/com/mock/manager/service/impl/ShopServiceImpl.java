@@ -19,6 +19,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.Date;
 
 /**
@@ -39,7 +40,7 @@ public class ShopServiceImpl implements ShopService {
 
     @Override
     @Transactional //开启事务，保证数据库操作的原子性
-    public ShopResponseExcuttion insertShop(Shop shop, File shopAwar) {
+    public ShopResponseExcuttion insertShop(Shop shop, InputStream shopImgInputstream, String shopImgame) {
         if(shop == null){
             throw  new RuntimeException("添加失败，shop不能为空");
         }
@@ -53,9 +54,9 @@ public class ShopServiceImpl implements ShopService {
             int result =  shopDao.insertShop(shop);
             System.out.print("\nresult:  " + result+"\n");
             if(result>0){
-                if(shopAwar != null){
+                if(shopImgInputstream != null){
                     try{
-                        addShopAwar(shop,shopAwar);
+                        addShopAwar(shop,shopImgInputstream,shopImgame);
                       int updateShop =   shopDao.updateShop(shop);
                       if(updateShop <= 0 ){
                           throw  new RuntimeException("updateShop error");
@@ -81,9 +82,9 @@ public class ShopServiceImpl implements ShopService {
         return 0;
     }
 
-    @Override
+
     @Transactional
-    public ShopResponseExcuttion insertShop2(Shop shop, File file) {
+    public ShopResponseExcuttion insertShop2(Shop shop, InputStream shopImgInputstream, String shopImgame) {
         if(shop != null){
             throw new RuntimeException("输入内容不得为空");
         }
@@ -91,7 +92,7 @@ public class ShopServiceImpl implements ShopService {
             shop.setLastModifyTime(new Date());
             shop.setCreateTime(new Date());
             shop.setEnableStatus(-1);
-            addShopAwar(shop,file);
+            addShopAwar(shop,shopImgInputstream,shopImgame);
 
             int result = shopDao.insertShop(shop);
             if(result <= 0){
@@ -103,12 +104,12 @@ public class ShopServiceImpl implements ShopService {
         return new ShopResponseExcuttion(ShopStateEnum.CHECK);
     }
 
-    private void addShopAwar(Shop shop, File shopAwar) {
+    private void addShopAwar(Shop shop,InputStream shopImgInputstream, String shopImgFileName) {
         //获取shop图片的相对路径
         String  dest = FileUtil.getShopImagePath(shop.getShopId());
         logger.info("图片的相对路径："+dest);
         System.out.print("图片的相对路径："+dest);
-        String shopImageAddr = ImageUtil2.generateThumbnail(shopAwar,dest);
+        String shopImageAddr = ImageUtil2.generateThumbnail(shopImgInputstream,shopImgFileName,dest);
         //更改img的字段
         shop.setShopImg(shopImageAddr);
         logger.info("最终图片的路径："+dest);
