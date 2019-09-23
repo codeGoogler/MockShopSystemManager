@@ -2,8 +2,8 @@
  *
  */
 $(function () {
-    var  intUrl = "/MockShopSystemManager/shop/getShopInitInfo";
-    var   regisitShopUrl = "/MockShopSystemManager/shop/regisitShop";
+    var  intUrl = "/MockYuerSystemManager/shop/getShopInitInfo";
+    var   regisitShopUrl = "/MockYuerSystemManager/shop/regisitShop";
     getShopInfo();
     console.log("已经进入到了js代码")
     function getShopInfo() {
@@ -58,10 +58,23 @@ $(function () {
                 }).data('id')
             };
 
+            var vetifyCode = $('#kaptcha_img').val();
+            $('#kaptcha_img').onclick();
+            console.log("vetifyCode 验证码:  " + vetifyCode+"\n"+(!vetifyCode)+"  "+(vetifyCode));
+            if(!vetifyCode){
+                $.toast("验证码不能为空");
+                return;
+            }
+            if(vetifyCode.length > 4){
+                $.toast("验证码错误");
+                return;
+            }
+
             var shopImg = $('#shop_img')[0].files[0];
             var formData = new FormData();
             formData.append("shopImg",shopImg);
             formData.append("shopBody",JSON.stringify(shop));
+            formData.append("vetifyCode", vetifyCode);
             console.log("formData:  " +formData.toString());
             console.log("formData values:  " +formData.values());
             //遍历所有的form表单 语法 教程

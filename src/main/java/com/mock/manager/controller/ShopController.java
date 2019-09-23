@@ -13,6 +13,7 @@ import com.mock.manager.service.ShopService;
 import com.mock.manager.utils.FileUtil;
 import com.mock.manager.utils.HttpServletRequestUtils;
 import com.mock.manager.utils.ImageUtil2;
+import com.mock.manager.utils.VertifyCodeUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -55,7 +56,11 @@ public class ShopController {
     public HashMap<String,Object> insertShop(HttpServletRequest httpServletRequest){
         System.out.print("httpServletRequest: " +httpServletRequest+"\n");
         HashMap<String,Object> hashMap = new HashMap<>();
-
+        if(VertifyCodeUtils.checkVertifyCode(httpServletRequest)){
+            hashMap.put("status",1003);
+            hashMap.put("success",false);
+            hashMap.put("message","验证码 错误");
+        }
         //接收参数， 注册店铺，返回结果
         String shopBody = HttpServletRequestUtils.getString(httpServletRequest,"shopBody");
 

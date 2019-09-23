@@ -27,13 +27,13 @@
     </init-param>
     <!--字体的颜色-->
     <init-param>
-      <param-name>kaptcha.textproducer.font.clolor</param-name>
+      <param-name>kaptcha.textproducer.font.color</param-name>
       <param-value>red</param-value>
     </init-param>
     <!--字体的大小-->
     <init-param>
       <param-name>kaptcha.textproducer.font.size</param-name>
-      <param-value>13</param-value>
+      <param-value>43</param-value>
     </init-param>
     <!-- 图片的宽度 -->
     <init-param>
@@ -65,11 +65,22 @@
       <param-name>kaptcha.textproducer.font.name</param-name>
       <param-value>Arial</param-value>
     </init-param>
+    <!-- 背景颜色渐变，開始颜色-->
+    <!--<init-param>
+      <param-name>kaptcha.background.clear.from</param-name>
+      <param-value>light</param-value>
+    </init-param>-->
+    <!-- 背景颜色渐变。结束颜色-->
+  <!--  <init-param>
+      <param-name>kaptcha.background.clear.to</param-name>
+      <param-value>yellow</param-value>
+    </init-param>-->
   </servlet>
   <servlet-mapping>
     <servlet-name>Kaptcha</servlet-name>
     <url-pattern>/Kaptcha</url-pattern>
   </servlet-mapping>
+
   <servlet>
     <servlet-name>spring-dispatcher</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
