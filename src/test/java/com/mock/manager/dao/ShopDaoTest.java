@@ -1,6 +1,7 @@
 package com.mock.manager.dao;
 
 import com.mock.manager.BaseTest;
+import com.mock.manager.dto.ShopResponseExcuttion;
 import com.mock.manager.entry.Area;
 import com.mock.manager.entry.PersonInfo;
 import com.mock.manager.entry.Shop;
@@ -9,6 +10,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.Date;
 
 /**
@@ -89,5 +92,13 @@ public class ShopDaoTest extends BaseTest {
         shop.setShopName("纷享水底捞：已修改");
         shopDao.updateShop(shop);
         logger.info("修改成功！");
+    }
+
+    @Test
+    public void queryShopById() throws FileNotFoundException {
+
+        Shop insertShop = shopDao.querybyShopId(4);
+        System.out.print(insertShop.getShopId()+insertShop.getShopName()+insertShop.getShopCategory().getShopCategoryName());
+
     }
 }

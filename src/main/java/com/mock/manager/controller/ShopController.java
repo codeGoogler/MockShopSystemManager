@@ -60,6 +60,7 @@ public class ShopController {
             hashMap.put("status",1003);
             hashMap.put("success",false);
             hashMap.put("message","验证码 错误");
+            return hashMap;
         }
         //接收参数， 注册店铺，返回结果
         String shopBody = HttpServletRequestUtils.getString(httpServletRequest,"shopBody");

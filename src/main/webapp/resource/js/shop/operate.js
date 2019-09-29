@@ -59,7 +59,7 @@ $(function () {
             };
 
             var vetifyCode = $('#kaptcha_img').val();
-            $('#kaptcha_img').onclick();
+            $('#kaptcha_img').onclick;
             console.log("vetifyCode 验证码:  " + vetifyCode+"\n"+(!vetifyCode)+"  "+(vetifyCode));
             if(!vetifyCode){
                 $.toast("验证码不能为空");

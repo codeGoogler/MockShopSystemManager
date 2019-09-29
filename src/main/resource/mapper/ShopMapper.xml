@@ -33,4 +33,53 @@
         where shop_id=#{shopId}
     </update>
 
+  <!--  学习博客：参考： https://www.cnblogs.com/young-z/p/8001428.html
+    在resultMap中定义数据表与实体类的映射关系，type这里用的别名指向Shop类，id为该映射的唯一标识，用于在后面我们的定义语句中引用，
+    内部的id和result分别对应主键和普通字段定义，column指数据表中字段名，property指实体类中属性名。
+    在之前的示例中，通过这个一个映射关系，我们查询出来的结果就转化为了一个Shop类对象-->
+
+    <resultMap id="shopMap" type="com.mock.manager.entry.Shop">
+        <id column="shop_id" property="shopId"/>
+        <result column="shop_name" property="shopName"/>
+        <result column="shop_desc" property="shopDesc"/>
+        <result column="shop_addr" property="shopAddr"/>
+        <result column="shop_img" property="shopName"/>
+        <result column="priority" property="priority"/>
+        <result column="enable_status" property="enableStatus"/>
+        <result column="last_modify_time" property="lastModifyTime"/>
+        <result column="advice" property="advice"/>
+        <association property="area" column="area_id" javaType="com.mock.manager.entry.Area">
+            <id property="areaId" column="area_id"/>
+            <result property="areaName" column="area_name"/>
+        </association>
+        <association property="owner" column="user_id" javaType="com.mock.manager.entry.PersonInfo">
+            <id property="userId" column="user_id"/>
+            <result property="name" column="name"/>
+        </association>
+        <association property="shopCategory" column="shop_category_id" javaType="com.mock.manager.entry.ShopCategory">
+            <id property="shopCategoryId" column="shop_category_id"/>
+            <result property="shopCategoryName" column="shop_category_name"/>
+        </association>
+    </resultMap>
+    <select id="querybyShopId" resultType="com.mock.manager.entry.Shop"  parameterType="Integer">
+        select
+        s.shop_id,
+        s.shop_name,
+        s.shop_desc,
+        s.shop_addr,
+        s.shop_img,
+        s.priority,
+        s.enable_status,
+        s.last_modify_time,
+        s.advice,
+        a.area_id,
+        a.area_name,
+        a.propertity,
+        a.create_time,
+        a.last_modify_time,
+        sc.shop_category_id,
+        sc.shop_category_name
+        from tab_shop s,tab_shop_cate_gory sc,tab_area a where
+         s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = #{shopId}
+    </select>
 </mapper>

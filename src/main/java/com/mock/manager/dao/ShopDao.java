@@ -12,6 +12,12 @@ import com.mock.manager.entry.Shop;
  */
 public interface ShopDao {
    /**
+    * 通过id，查询店铺信息
+    * @param shopId
+    * @return
+    */
+   Shop querybyShopId(Integer shopId);
+   /**
     * 插入店铺信息
     * @param shop
     * @return

@@ -7,6 +7,7 @@ import com.mock.manager.entry.Area;
 import com.mock.manager.entry.PersonInfo;
 import com.mock.manager.entry.Shop;
 import com.mock.manager.entry.ShopCategory;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -33,7 +34,9 @@ public class ShopServiceTest extends BaseTest {
 
 
 
+
     @Test
+    @Ignore
     public void addShop() throws FileNotFoundException {
         Shop shop = new Shop();
         PersonInfo personInfo = new PersonInfo();
@@ -68,6 +71,7 @@ public class ShopServiceTest extends BaseTest {
     }
 
     @Test
+    @Ignore
     public void addShop2(){
         Shop shop = new Shop();
 
