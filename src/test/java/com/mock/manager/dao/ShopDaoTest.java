@@ -24,6 +24,7 @@ public class ShopDaoTest extends BaseTest {
     ShopDao shopDao;
 
     @Test
+    @Ignore
     public void insert(){
         Shop shop = new Shop();
 
@@ -58,6 +59,7 @@ public class ShopDaoTest extends BaseTest {
     }
 
     @Test
+    @Ignore
     public void update(){
         Shop shop = new Shop();
         shop.setShopId(1);
@@ -89,5 +91,22 @@ public class ShopDaoTest extends BaseTest {
         shop.setShopName("纷享水底捞：已修改");
         shopDao.updateShop(shop);
         logger.info("修改成功！");
+    }
+    @Test
+    @Ignore
+    public void update2(){
+        Shop shop = new Shop();
+
+        shopDao.updateShop(shop);
+        logger.info("修改成功！");
+    }
+    @Test
+    public void queryShopInfoById(){
+        Shop shop =  shopDao.queryShopInfoById(1);
+
+        System.out.print("\n"+"id:"+shop.getShopId()+"\n"+
+                "店铺名称:"+shop.getShopName()+"\n"+
+                "地区名称:"+shop.getArea().getAreaName()+"\n"+
+                "商品名称:"+shop.getShopCategory().getShopCategoryName()+"\n");
     }
 }

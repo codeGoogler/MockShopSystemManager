@@ -15,7 +15,7 @@ public class PersonInfo {
 	private Integer shopOwnerFlag;
 	private Integer adminFlag;
 	private Date createTime;
-	private Date lastEditTime;
+	private Date lastModifyTime;
 	private Integer enableStatus;
 
 	public Long getUserId() {
@@ -106,12 +106,12 @@ public class PersonInfo {
 		this.createTime = createTime;
 	}
 
-	public Date getLastEditTime() {
-		return lastEditTime;
+	public Date getLastModifyTime() {
+		return lastModifyTime;
 	}
 
-	public void setLastEditTime(Date lastEditTime) {
-		this.lastEditTime = lastEditTime;
+	public void setLastModifyTime(Date lastModifyTime) {
+		this.lastModifyTime = lastModifyTime;
 	}
 
 	public Integer getEnableStatus() {
@@ -121,5 +121,4 @@ public class PersonInfo {
 	public void setEnableStatus(Integer enableStatus) {
 		this.enableStatus = enableStatus;
 	}
-
 }

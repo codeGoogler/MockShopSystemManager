@@ -7,6 +7,8 @@ import com.mock.manager.entry.Area;
 import com.mock.manager.entry.PersonInfo;
 import com.mock.manager.entry.Shop;
 import com.mock.manager.entry.ShopCategory;
+import com.mock.manager.utils.FileUtil;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -28,12 +30,14 @@ public class ShopServiceTest extends BaseTest {
 
     @Autowired
     private ShopService shopService;
-    @Autowired
-    private ShopController shopController;
+
+//    @Autowired
+//    private ShopController shopController;
 
 
 
     @Test
+    @Ignore
     public void addShop() throws FileNotFoundException {
         Shop shop = new Shop();
         PersonInfo personInfo = new PersonInfo();
@@ -68,6 +72,7 @@ public class ShopServiceTest extends BaseTest {
     }
 
     @Test
+    @Ignore
     public void addShop2(){
         Shop shop = new Shop();
 
@@ -107,9 +112,23 @@ public class ShopServiceTest extends BaseTest {
         logger.info("添加成功！");
     }
     @Test
+    @Ignore
     public void getShopInitInfo(){
 
-        HashMap<String,Object> shopInitInfo = shopController.getShopInitInfo();
-        System.out.print(shopInitInfo.values());
+//        HashMap<String,Object> shopInitInfo = shopController.getShopInitInfo();
+//        System.out.print(shopInitInfo.values());
+    }
+
+    @Test
+    public void updateShopTest() throws FileNotFoundException {
+        Shop shop = shopService.queryShopInfoById(1);
+        System.out.print(shop.getShopName()+"\n"+shop.getShopImg()+"\n"+shop.getShopAddr());
+        File shipImage = new File("C:\\Users\\king\\Desktop\\choujiang.jpg");
+        System.out.print("文件名： "+shipImage.getName());
+        System.out.print("getAbsolutePath文件名： "+shipImage.getAbsolutePath());
+        System.out.print("getParent文件名： "+shipImage.getParent());
+        System.out.print("getPath文件名： "+shipImage.getPath());
+        shopService.updateShop(shop,new FileInputStream(shipImage),shipImage.getName());
+        System.out.print(shop.getShopName()+"\n"+shop.getShopImg()+"\n"+shop.getShopAddr());
     }
 }

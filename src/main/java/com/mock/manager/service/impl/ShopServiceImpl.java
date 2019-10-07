@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -78,8 +79,30 @@ public class ShopServiceImpl implements ShopService {
     }
 
     @Override
-    public int updateShop(Shop shop) {
-        return 0;
+    public  ShopResponseExcuttion updateShop(Shop shop, InputStream shopImgInputstream, String shopImgame){
+        if(shop == null || shop.getShopId() <= 0){
+            return new ShopResponseExcuttion(ShopStateEnum.NO_SHOP);
+        }
+        try {
+            // 修改图片，删除重新对model进行赋值
+            if(shopImgInputstream != null){
+                Shop shopResult = queryShopInfoById(shop.getShopId());
+                if(StringUtils.isEmpty(shopResult.getShopName())){
+                    FileUtil.deleteFile(shopResult.getShopName());
+                }
+                addShopAwar(shop,shopImgInputstream,shopImgame);
+            }
+            //更新图片的信息
+            shop.setLastModifyTime(new Date());
+            int result =  shopDao.updateShop(shop);
+            if(result <= 0){
+                return new ShopResponseExcuttion(ShopStateEnum.INTER_ERROR);
+            }
+            Shop updateModel = shopDao.queryShopInfoById(shop.getShopId());
+            return new ShopResponseExcuttion(ShopStateEnum.SUCCESS,updateModel);
+        }catch (Exception e){
+            throw new RuntimeException("update shop error "+e.getMessage());
+        }
     }
 
 
@@ -102,6 +125,11 @@ public class ShopServiceImpl implements ShopService {
             throw new RuntimeException("insertShop error");
         }
         return new ShopResponseExcuttion(ShopStateEnum.CHECK);
+    }
+
+    @Override
+    public Shop queryShopInfoById(Integer shopId) {
+        return shopDao.queryShopInfoById(shopId);
     }
 
     private void addShopAwar(Shop shop,InputStream shopImgInputstream, String shopImgFileName) {

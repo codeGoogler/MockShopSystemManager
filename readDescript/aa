@@ -235,4 +235,14 @@ alter table tab_area propertity change priority  varchar(10);
 
 alter table tab_area v priority  propertity varchar(10);
 
+为数据库增加某一列
 alter table tab_shop  add advice varchar(10)  ;
+
+为数据库删除
+alter table 表名 drop 列名;//删除列
+
+回复'java' ,可获取java的学习资源
+回复'python',可获取python的相关教程
+回复'C',可获取c语言的相关教程
+回复'全栈',可获取全栈的相关教程
+回复'电子书',可获取相关的技术电子pdf

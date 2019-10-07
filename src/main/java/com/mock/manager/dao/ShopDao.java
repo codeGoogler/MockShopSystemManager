@@ -22,4 +22,9 @@ public interface ShopDao {
     * 更新店铺信息
     */
    int updateShop(Shop shop);
+   /**
+    * 查询店铺的信息
+    *
+    */
+   Shop queryShopInfoById(Integer shopId);
 }

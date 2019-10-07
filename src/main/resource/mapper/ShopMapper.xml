@@ -33,4 +33,61 @@
         where shop_id=#{shopId}
     </update>
 
+    <!--// https://www.cnblogs.com/wxdestiny/p/9772412.html-->
+    <resultMap id="quertShopInfoByIdShopMap" type="com.mock.manager.entry.Shop">
+        <id property="shopId" column="shop_id"/>
+        <result property="shopName" column="shop_name"/>
+        <result property="shopAddr" column="shop_addr"/>
+        <result property="shopImg" column="shop_img"/>
+        <result property="priority" column="priority"/>
+        <result property="phone" column="phone"/>
+        <result property="advice" column="advice"/>
+        <result property="enableStatus" column="enable_status"/>
+        <result property="lastModifyTime" column="last_modify_time"/>
+        <association property="area" column="area_id" javaType="com.mock.manager.entry.Area">
+            <id  property="areaId" column="area_id"/>
+            <result  property="areaName" column="area_name"/>
+            <result  property="priority" column="priority"/>
+            <result  property="createTime" column="create_time"/>
+            <result  property="lastModifyTime" column="last_modify_time"/>
+        </association>
+        <association property="owner" column="owner_id" javaType="com.mock.manager.entry.PersonInfo">
+            <id  property="userId" column="user_id"/>
+            <result  property="name" column="name"/>
+            <result  property="birthday" column="birthday"/>
+            <result  property="createTime" column="create_time"/>
+            <result  property="lastModifyTime" column="last_modify_time"/>
+        </association>
+        <association property="shopCategory" column="shop_category_id" javaType="com.mock.manager.entry.ShopCategory">
+            <id  property="shopCategoryId" column="shop_category_id"/>
+            <result  property="shopCategoryName" column="shop_category_name"/>
+        </association>
+    </resultMap>
+
+    <select id="queryShopInfoById" resultMap="quertShopInfoByIdShopMap" parameterType="Integer">
+      select s.shop_id,
+             s.shop_name,
+             s.shop_addr,
+             s.shop_img,
+             s.priority,
+             s.phone,
+             s.advice,
+             s.enable_status,
+             s.area_id,
+             s.shop_category_id,
+             a.area_id,
+             a.area_name,
+             a.create_time,
+             a.last_modify_time,
+             cc.shop_category_id,
+             cc.shop_category_name,
+             p.user_id,
+             p.name,
+             p.email
+      from  tab_shop s,
+      tab_area a,
+      tab_persion_info p,
+      tab_shop_category cc
+      where  a.area_id = s.area_id and cc.shop_category_id = s.shop_category_id and p.user_id = s.owner_id and s.shop_id= #{shopId}
+    </select>
 </mapper>

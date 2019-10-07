@@ -26,8 +26,15 @@ public interface ShopService {
     /**
      * 更新店铺信息
      */
-    int updateShop(Shop shop);
+    ShopResponseExcuttion updateShop(Shop shop, InputStream shopImgInputstream, String shopImgame);
 
 
     ShopResponseExcuttion insertShop2(Shop shop, InputStream shopImgInputstream, String shopImgame);
+
+    /**
+     * 查询店铺的信息
+     *
+     */
+
+    Shop queryShopInfoById(Integer shopId);
 }

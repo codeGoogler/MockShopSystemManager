@@ -15,7 +15,7 @@ public class Area extends BaseBean<Area>{
     private String areaName;
 
     //权重
-    private Integer propertity;
+    private Integer priority;
 
     // 创建时间
     private String createTime;
@@ -45,12 +45,12 @@ public class Area extends BaseBean<Area>{
         this.areaName = areaName;
     }
 
-    public Integer getPropertity() {
-        return propertity;
+    public Integer getPriority() {
+        return priority;
     }
 
-    public void setPropertity(Integer propertity) {
-        this.propertity = propertity;
+    public void setPriority(Integer propertity) {
+        this.priority = propertity;
     }
 
     public String getCreateTime() {
