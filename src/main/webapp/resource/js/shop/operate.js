@@ -7,8 +7,10 @@ $(function () {
     var   regisitShopUrl = "/MockYuerSystemManager/shop/regisitShop";
     var   shopInfoUrl = "/MockYuerSystemManager/shop/getShopById?shopId="+shopId;
     var  isEdit = shopId ? true : false;
+    console.log("isEdit: " +shopId);
+    alert("isEdit: " +shopId);
     if(isEdit){
-
+        getShopInfo(1);
     }else{
         getShopInitInfo();
     }
@@ -23,9 +25,9 @@ $(function () {
                 $('#shop_desc').val(shop.shopDesc);
                 $('#shop_phone').val(shop.phone);
                 $('#shop_addr').val(shop.shopAddr);
-                var tempShopCategory = '<option data-id="'+shop.shopCategoryId+'">'+shop.shopCategoryName+'</option>'
+                var tempShopCategory = '<option data-id="'+shop.shopCategoryId+'">'+shop.shopCategory.shopCategoryName+'</option>'
                 $('#shop_category').html(tempShopCategory);
-                var tempArea = '<option data-id="'+shop.areaId+'">'+shop.areaName+'</option>';
+                var tempArea = '<option data-id="'+shop.areaId+'">'+shop.area.areaName+'</option>';
                 $('#area_item').html(tempArea);
                 console.log("进入到了 success1 的方法");
                 $('#shop_category').html(tempShopCategory);

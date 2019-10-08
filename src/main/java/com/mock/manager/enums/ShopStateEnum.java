@@ -14,7 +14,8 @@ public enum ShopStateEnum {
     SUCCESS(1,"操作成功"),
     VERTIFY(2,"审核通过"),
     INTER_ERROR(1001,"内部系统错误"),
-    NO_SHOP(1002,"shop为空");
+    NO_SHOP(1002,"shop为空"),
+    ERROR_PARAMS(1003,"无效的参数");
 
 
     private int state;

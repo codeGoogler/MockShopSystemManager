@@ -42,6 +42,7 @@
         <result property="priority" column="priority"/>
         <result property="phone" column="phone"/>
         <result property="advice" column="advice"/>
+        <result property="shopDesc" column="shop_desc"/>
         <result property="enableStatus" column="enable_status"/>
         <result property="lastModifyTime" column="last_modify_time"/>
         <association property="area" column="area_id" javaType="com.mock.manager.entry.Area">
@@ -69,6 +70,8 @@
              s.shop_name,
              s.shop_addr,
              s.shop_img,
+             s.shop_desc,
+             s.shop_desc,
              s.priority,
              s.phone,
              s.advice,
@@ -87,7 +90,7 @@
       from  tab_shop s,
       tab_area a,
       tab_persion_info p,
-      tab_shop_category cc
+      tab_shop_cate_gory cc
       where  a.area_id = s.area_id and cc.shop_category_id = s.shop_category_id and p.user_id = s.owner_id and s.shop_id= #{shopId}
     </select>
 </mapper>

@@ -63,6 +63,7 @@ public class ShopController {
        }
        try {
            Shop shop = shopService.queryShopInfoById(shopId);
+           System.out.println("店铺秒速L:"+shop.getShopDesc());
            hashMap.put("status",200);
            hashMap.put("success",true);
            hashMap.put("shop",shop == null ? new Shop() : shop);

@@ -16,6 +16,14 @@ import java.io.InputStream;
  */
 public interface ShopService {
     /**
+     *根据店铺条件，查询店铺列表
+     * @param shopCondition
+     * @param page
+     * @param size
+     * @return
+     */
+    ShopResponseExcuttion getShopList(Shop shopCondition,int page, int size);
+    /**
      * 插入店铺信息
      * @param shop
      * @return

@@ -40,6 +40,18 @@ public class ShopServiceImpl implements ShopService {
 
 
     @Override
+    public ShopResponseExcuttion getShopList(Shop shopCondition, int page, int size) {
+        if(shopCondition == null){
+            return new ShopResponseExcuttion(ShopStateEnum.NO_SHOP);
+        }
+        if(page <= 0|| size <=0){
+            return new ShopResponseExcuttion(ShopStateEnum.ERROR_PARAMS);
+        }
+
+        return null;
+    }
+
+    @Override
     @Transactional //开启事务，保证数据库操作的原子性
     public ShopResponseExcuttion insertShop(Shop shop, InputStream shopImgInputstream, String shopImgame) {
         if(shop == null){
