@@ -6,15 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b2e93e-02ab-42eb-8c48-3dcc538f5123" name="Default Changelist" comment="修改一些配置，正常访问controller层的代码2">
+    <list default="true" id="23b2e93e-02ab-42eb-8c48-3dcc538f5123" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mock/manager/dao/ShopDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mock/manager/dao/ShopDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/ShopMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/ShopMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/spring/spring-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/js/shop/operate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/shop/operate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mock/manager/dao/ShopDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mock/manager/dao/ShopDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mock/manager/service/ShopServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mock/manager/service/ShopServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,31 +43,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/dao/ShopDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/Shop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="17" column="28" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2162#2163#0" expanded="true" />
-                <element signature="e#2190#2191#0" expanded="true" />
-                <element signature="e#2245#2246#0" expanded="true" />
-                <element signature="e#2288#2289#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/AreaMapper.xml">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -82,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/AreaService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -103,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/ShopMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+            <state relative-caret-position="1156">
+              <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -112,17 +81,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/service/ShopServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
+            <state relative-caret-position="306">
               <caret line="34" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/dao/ShopDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="92" column="33" lean-forward="true" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
+            <state relative-caret-position="459">
+              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopAdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="41" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
+            <state relative-caret-position="663">
               <caret line="39" column="90" selection-start-line="39" selection-start-column="90" selection-end-line="39" selection-end-column="90" />
             </state>
           </provider>
@@ -139,7 +129,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/ShopService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="204">
               <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -244,7 +234,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/utils/VertifyCodeUtils.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/ShopAdd.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/controller/localAuthCOmtroller.java" />
         <option value="$PROJECT_DIR$/src/main/resource/spring/spring-web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -255,6 +244,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/dao/ShopDao.java" />
         <option value="$PROJECT_DIR$/src/main/resource/mapper/ShopMapper.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/mock/manager/dao/ShopDaoTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -285,8 +275,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-159" />
-    <option name="y" value="321" />
+    <option name="x" value="-468" />
+    <option name="y" value="365" />
     <option name="width" value="1940" />
     <option name="height" value="1042" />
   </component>
@@ -337,6 +327,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -344,11 +335,6 @@
             <path>
               <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="readDescript" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
@@ -385,141 +371,10 @@
               <item name="manager" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="entry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -569,7 +424,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShopDaoTest.queryShopById">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.0">
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -880,8 +735,8 @@
       <item itemvalue="JUnit.ShopServiceTest.addShop" />
       <item itemvalue="JUnit.ShopServiceTest.addShop2" />
       <item itemvalue="JUnit.ShopCategoryDaoTest.testShopCategoryDao" />
-      <item itemvalue="Tomcat Server.Tomcat 8.0.0" />
       <item itemvalue="JUnit.ShopDaoTest.queryShopById" />
+      <item itemvalue="Tomcat Server.Tomcat 8.0.0" />
     </list>
     <recent_temporary>
       <list>
@@ -915,7 +770,8 @@
       <workItem from="1568730329151" duration="54319000" />
       <workItem from="1568899950079" duration="216000" />
       <workItem from="1569736864683" duration="6276000" />
-      <workItem from="1569744344899" duration="6441000" />
+      <workItem from="1569744344899" duration="6551000" />
+      <workItem from="1570497327700" duration="5002000" />
     </task>
     <task id="LOCAL-00001" summary="提交了一个server的配置，增加简单用例的controller">
       <created>1568265998382</created>
@@ -938,19 +794,17 @@
       <option name="project" value="LOCAL" />
       <updated>1568280500362</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改一些配置，正常访问controller层的代码3">
+      <created>1569751246660</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569751246660</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ShopCategoryDaoTest_testShopCategoryDao - 2019.09.19 at 20h 44m 05s.xml">
-      <configuration name="ShopCategoryDaoTest.testShopCategoryDao" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShopDaoTest_queryShopById - 2019.09.29 at 17h 24m 02s.xml">
-      <configuration name="ShopDaoTest.queryShopById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShopDaoTest_queryShopById - 2019.09.29 at 17h 24m 37s.xml">
-      <configuration name="ShopDaoTest.queryShopById" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ShopDaoTest_queryShopById - 2019.09.29 at 17h 27m 50s.xml">
       <configuration name="ShopDaoTest.queryShopById" configurationId="JUnit" />
     </history-entry>
@@ -972,9 +826,18 @@
     <history-entry file="ShopDaoTest_queryShopById - 2019.09.29 at 17h 41m 17s.xml">
       <configuration name="ShopDaoTest.queryShopById" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ShopDaoTest_queryShopById - 2019.09.29 at 18h 00m 25s.xml">
+      <configuration name="ShopDaoTest.queryShopById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShopDaoTest_queryShopById - 2019.10.08 at 09h 55m 13s.xml">
+      <configuration name="ShopDaoTest.queryShopById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShopDaoTest_queryShopById - 2019.10.08 at 11h 36m 11s.xml">
+      <configuration name="ShopDaoTest.queryShopById" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228151000" />
+    <option name="totallyTimeSpent" value="233263000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -986,10 +849,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4980695" visible="true" weight="0.21748401" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4980695" visible="true" weight="0.15191898" />
       <window_info id="Structure" order="1" sideWeight="0.5019305" side_tool="true" weight="0.0" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -1000,15 +863,15 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4969743" weight="0.32935154" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49848714" weight="0.34982935" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.93070364" weight="0.13665944" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" sideWeight="0.9301706" visible="true" weight="0.64859" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.92963755" visible="true" weight="0.04989154" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.9301706" weight="0.19848156" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.6959153" weight="0.03253796" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.86913764" weight="0.55119455" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.06982943" side_tool="true" visible="true" weight="0.64859" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.8683369" weight="0.03253796" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.07036247" side_tool="true" visible="true" weight="0.04989154" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.6535552" weight="0.0" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" sideWeight="0.8683369" weight="0.37310195" />
       <window_info anchor="bottom" id="Spring" order="14" sideWeight="0.4978678" weight="0.18763557" />
@@ -1082,7 +945,8 @@
     <MESSAGE value="提交了一个server的配置，增加简单用例的controller" />
     <MESSAGE value="修改一些配置，正常访问controller层的代码" />
     <MESSAGE value="修改一些配置，正常访问controller层的代码2" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改一些配置，正常访问controller层的代码2" />
+    <MESSAGE value="修改一些配置，正常访问controller层的代码3" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改一些配置，正常访问controller层的代码3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1322,13 +1186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1364,16 +1221,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
           <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1432,19 +1279,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/ShopService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/dao/ShopDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/Shop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
+        <state relative-caret-position="272">
           <caret line="17" column="28" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1462,7 +1306,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/AreaService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -1477,38 +1321,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/dao/ShopDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/ShopMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="39" column="90" selection-start-line="39" selection-start-column="90" selection-end-line="39" selection-end-column="90" />
+        <state relative-caret-position="1156">
+          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/service/ShopServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
+        <state relative-caret-position="306">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="90" selection-start-line="39" selection-start-column="90" selection-end-line="39" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/ShopService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/dao/ShopDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="92" column="33" lean-forward="true" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
+        <state relative-caret-position="459">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

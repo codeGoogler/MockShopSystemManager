@@ -1,2 +1,5 @@
 /out
 /target
+/.idea
+/catalina.base_IS_UNDEFINED
+/log.pattern_IS_UNDEFINED
