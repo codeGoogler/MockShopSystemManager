@@ -7,6 +7,7 @@ import com.mock.manager.entry.Area;
 import com.mock.manager.entry.PersonInfo;
 import com.mock.manager.entry.Shop;
 import com.mock.manager.entry.ShopCategory;
+import com.mock.manager.enums.ShopStateEnum;
 import com.mock.manager.utils.FileUtil;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -18,6 +19,7 @@ import java.io.FileNotFoundException;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 类功能描述：</br>
@@ -120,6 +122,7 @@ public class ShopServiceTest extends BaseTest {
     }
 
     @Test
+    @Ignore
     public void updateShopTest() throws FileNotFoundException {
         Shop shop = shopService.queryShopInfoById(1);
         System.out.print(shop.getShopName()+"\n"+shop.getShopImg()+"\n"+shop.getShopAddr());
@@ -130,5 +133,29 @@ public class ShopServiceTest extends BaseTest {
         System.out.print("getPath文件名： "+shipImage.getPath());
         shopService.updateShop(shop,new FileInputStream(shipImage),shipImage.getName());
         System.out.print(shop.getShopName()+"\n"+shop.getShopImg()+"\n"+shop.getShopAddr());
+    }
+
+
+    @Test
+    public void getShopList() throws FileNotFoundException {
+         Shop shop = new Shop();
+        shop.setShopName("wqer");
+         try{
+             ShopResponseExcuttion  shopResponseExcuttion = shopService.getShopList(shop,4,3);
+             if(shopResponseExcuttion.getState() == ShopStateEnum.SUCCESS.getState()){
+                 List<Shop> sholist = shopResponseExcuttion.getShopList();
+                 for(Shop shop1: sholist)
+                 {
+                     System.out.println("\n店铺名: "+ shop1.getShopName()+ "  id: "+shop.getShopId());
+                 }
+                 System.out.println("\n总数量： " +shopService.queryTotleCount(shop));
+             }else {
+
+                 System.out.println("添加店铺失败");
+             }
+         }catch (Exception e){
+             e.printStackTrace();
+         }
+
     }
 }

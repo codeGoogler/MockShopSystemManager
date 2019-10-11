@@ -2,6 +2,7 @@ package com.mock.manager.service;
 
 import com.mock.manager.dto.ShopResponseExcuttion;
 import com.mock.manager.entry.Shop;
+import org.apache.ibatis.annotations.Param;
 
 import java.io.File;
 import java.io.InputStream;
@@ -45,4 +46,12 @@ public interface ShopService {
      */
 
     Shop queryShopInfoById(Integer shopId);
+
+
+    /**
+     * 查询店铺的信息
+     *
+     */
+    int queryTotleCount(Shop shopContadition);
+
 }

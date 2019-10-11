@@ -14,7 +14,7 @@
         );
     </insert>
 
-        <!-- 进行修改的格式 <if test="xxx条件">xCoumn=#{model的属性名}</if>-->
+    <!-- 进行修改的格式 <if test="xxx条件">xCoumn=#{model的属性名}</if>-->
     <update id="updateShop" parameterType="com.mock.manager.entry.Shop">
         update tab_shop
         <set>
@@ -92,5 +92,57 @@
       tab_persion_info p,
       tab_shop_cate_gory cc
       where  a.area_id = s.area_id and cc.shop_category_id = s.shop_category_id and p.user_id = s.owner_id and s.shop_id= #{shopId}
+    </select>
+    <!--resultMap 需要和resultMap的id保持一致，在上面定义好，用于实体类的映射-->
+    <select id="getShopList" resultMap="quertShopInfoByIdShopMap">
+        select shop_id,
+        s.shop_name,
+        s.shop_addr,
+        s.shop_img,
+        s.shop_desc,
+        s.shop_desc,
+        s.priority,
+        s.phone,
+        s.advice,
+        s.enable_status,
+        s.area_id,
+        s.shop_category_id
+        from  tab_shop s,tab_area a,tab_shop_cate_gory cc
+        <where>
+            <if test="shopContadition != null and shopContadition.area != null and shopContadition.area.areaId != null"> and area_id = #{shopContadition.area.areaId}</if>
+            <if test="shopContadition.owner != null"> and s.owner_id = #{shopContadition.owner.userId}</if>
+            <if test="shopContadition.shopName != null">and s.shop_name like concat('%',#{shopContadition.shopName},'%')</if>
+            <if test="shopContadition.shopAddr != null"> and s.shop_addr = #{shopContadition.shopAddr}</if>
+            <if test="shopContadition.shopImg != null"> and s.shop_img = #{shopContadition.shopImg}</if>
+            <if test="shopContadition.priority != null"> and s.priority = #{shopContadition.priority}</if>
+            <if test="shopContadition.phone != null"> and s.phone = #{shopContadition.phone}</if>
+            <if test="shopContadition.advice != null"> and s.advice = #{shopContadition.advice}</if>
+            <if test="shopContadition.shopDesc != null"> and s.shop_desc = #{shopContadition.shopDesc}</if>
+            <if test="shopContadition.enableStatus != null"> and s.eanble_status = #{shopContadition.enableStatus}</if>
+            <if test="shopContadition.lastModifyTime != null"> and s.last_modify_time = #{shopContadition.lastModifyTime}</if>
+            and s.area_id = a.area_id and cc.shop_category_id = s.shop_category_id
+        </where>
+        order by s.priority desc
+        LIMIT #{pageNo}, #{pageSize};
+    </select>
+    <!--查询所有的注册店铺的个数-->
+    <select id="queryTotleCount" resultType="int">
+        select
+         count(1)
+        from  tab_shop s,tab_area a,tab_shop_cate_gory cc
+        <where>
+            <if test="shopContadition != null and shopContadition.area != null and shopContadition.area.areaId != null"> and area_id = #{shopContadition.area.areaId}</if>
+            <if test="shopContadition.owner != null"> and s.owner_id = #{shopContadition.owner.userId}</if>
+            <if test="shopContadition.shopName != null"> and s.shop_name  like  '%${shopContadition.shopName}%'</if>
+            <if test="shopContadition.shopAddr != null"> and s.shop_addr = #{shopContadition.shopAddr}</if>
+            <if test="shopContadition.shopImg != null"> and s.shop_img = #{shopContadition.shopImg}</if>
+            <if test="shopContadition.priority != null"> and s.priority = #{shopContadition.priority}</if>
+            <if test="shopContadition.phone != null"> and s.phone = #{shopContadition.phone}</if>
+            <if test="shopContadition.advice != null"> and s.advice = #{shopContadition.advice}</if>
+            <if test="shopContadition.shopDesc != null"> and s.shop_desc = #{shopContadition.shopDesc}</if>
+            <if test="shopContadition.enableStatus != null"> and s.eanble_status = #{shopContadition.enableStatus}</if>
+            <if test="shopContadition.lastModifyTime != null"> and s.last_modify_time = #{shopContadition.lastModifyTime}</if>
+            and s.area_id = a.area_id and cc.shop_category_id = s.shop_category_id
+        </where>
     </select>
 </mapper>

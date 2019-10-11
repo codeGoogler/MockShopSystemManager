@@ -8,6 +8,7 @@ import com.mock.manager.service.ShopService;
 import com.mock.manager.utils.FileUtil;
 import com.mock.manager.utils.ImageUtil;
 import com.mock.manager.utils.ImageUtil2;
+import com.mock.manager.utils.PageCalculator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * 类功能描述：</br>
@@ -40,15 +43,29 @@ public class ShopServiceImpl implements ShopService {
 
 
     @Override
-    public ShopResponseExcuttion getShopList(Shop shopCondition, int page, int size) {
+    public ShopResponseExcuttion getShopList(Shop shopCondition, int pageNo, int pageSize) {
         if(shopCondition == null){
             return new ShopResponseExcuttion(ShopStateEnum.NO_SHOP);
         }
-        if(page <= 0|| size <=0){
+        if(pageNo <= 0|| pageSize <=0){
             return new ShopResponseExcuttion(ShopStateEnum.ERROR_PARAMS);
         }
+        ShopResponseExcuttion shopResponseExcuttion = null;
+        try{
+            List<Shop> resultLsit = shopDao.getShopList(shopCondition, PageCalculator.calculRowIndex(pageNo,pageSize),pageSize);
+            shopResponseExcuttion = new ShopResponseExcuttion(ShopStateEnum.SUCCESS);
+            if(resultLsit == null || resultLsit.isEmpty()){
+                shopResponseExcuttion.setShopList(new ArrayList<Shop>());
+            }
+            int couunt = shopDao.queryTotleCount(shopCondition);
+            shopResponseExcuttion.setShopList(resultLsit);
+            shopResponseExcuttion.setCount(couunt);
 
-        return null;
+        }catch (Exception e){
+            e.printStackTrace();
+//            throw new RuntimeException("查询异常："+e.getMessage());
+        }
+        return shopResponseExcuttion;
     }
 
     @Override
@@ -70,11 +87,11 @@ public class ShopServiceImpl implements ShopService {
                 if(shopImgInputstream != null){
                     try{
                         addShopAwar(shop,shopImgInputstream,shopImgame);
-                      int updateShop =   shopDao.updateShop(shop);
-                      if(updateShop <= 0 ){
-                          throw  new RuntimeException("updateShop error");
-                      }
-                      // 此处可用于测试 数据操作的原子性
+                        int updateShop =   shopDao.updateShop(shop);
+                        if(updateShop <= 0 ){
+                            throw  new RuntimeException("updateShop error");
+                        }
+                        // 此处可用于测试 数据操作的原子性
                     }catch (Exception e){
                         e.printStackTrace();
                         throw  new RuntimeException("addShopAwar error");
@@ -120,7 +137,7 @@ public class ShopServiceImpl implements ShopService {
 
     @Transactional
     public ShopResponseExcuttion insertShop2(Shop shop, InputStream shopImgInputstream, String shopImgame) {
-        if(shop != null){
+        if(shop == null){
             throw new RuntimeException("输入内容不得为空");
         }
         try {
@@ -144,6 +161,19 @@ public class ShopServiceImpl implements ShopService {
         return shopDao.queryShopInfoById(shopId);
     }
 
+    @Override
+    public int queryTotleCount(Shop shopContadition) {
+        if(shopContadition == null){
+            throw new RuntimeException("输入内容不得为空");
+        }
+        try{
+            return   shopDao.queryTotleCount(shopContadition);
+        }catch (Exception e){
+            e.printStackTrace();
+            throw new RuntimeException("查询异常："+e.getMessage());
+        }
+    }
+
     private void addShopAwar(Shop shop,InputStream shopImgInputstream, String shopImgFileName) {
         //获取shop图片的相对路径
         String  dest = FileUtil.getShopImagePath(shop.getShopId());
@@ -155,7 +185,5 @@ public class ShopServiceImpl implements ShopService {
         logger.info("最终图片的路径："+dest);
         System.out.print("最终图片的路径："+dest);
     }
-
-
 
 }

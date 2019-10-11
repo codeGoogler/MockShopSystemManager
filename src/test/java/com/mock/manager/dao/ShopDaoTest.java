@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * 类功能描述：</br>
@@ -101,6 +102,7 @@ public class ShopDaoTest extends BaseTest {
         logger.info("修改成功！");
     }
     @Test
+    @Ignore
     public void queryShopInfoById(){
         Shop shop =  shopDao.queryShopInfoById(1);
 
@@ -108,5 +110,24 @@ public class ShopDaoTest extends BaseTest {
                 "店铺名称:"+shop.getShopName()+"\n"+
                 "地区名称:"+shop.getArea().getAreaName()+"\n"+
                 "商品名称:"+shop.getShopCategory().getShopCategoryName()+"\n");
+    }
+    @Test
+    public void getShopList(){
+        Shop shop =  new Shop();
+        shop.setShopName("qer");
+        List<Shop> shopList =  shopDao.getShopList(shop,5,4);
+        int  totleCouint =  shopDao.queryTotleCount(shop);
+
+        System.out.print(
+                "\n"+"总个数:"+shopList.size()+"\n"+
+                "\n"+"总个数:"+totleCouint+"\n");
+
+        System.out.println();
+        if(!shopList.isEmpty()){
+            for (Shop shop1: shopList){
+                System.out.println(shop1.toString());
+            }
+        }
+
     }
 }

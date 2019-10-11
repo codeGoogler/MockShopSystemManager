@@ -45,6 +45,7 @@ public class ShopController {
 
     @Autowired
     ShopCategoryService shopCategoryService;
+
     @Autowired
     AreaService areaService;
 
@@ -244,6 +245,29 @@ public class ShopController {
     }
 
 
+
+    @PostMapping(value = "/getShopList")
+    @ResponseBody
+    public HashMap<String,Object> getShopList(Shop shopCondition, int pageNo, int pageSize) {
+        HashMap<String,Object> resultMap = new HashMap<>();
+        try {
+            ShopResponseExcuttion shopResponseExcuttion = shopService.getShopList(shopCondition,pageNo,pageSize);
+            if(shopResponseExcuttion.getState() ==  ShopStateEnum.CHECK.getState()){
+                resultMap.put("status",200);
+                resultMap.put("success",true);
+                resultMap.put("shopList",shopResponseExcuttion.getShopList());
+            }else {
+                resultMap.put("status",1003);
+                resultMap.put("success",false);
+                resultMap.put("message","查询失败");
+            }
+        }catch (Exception e){
+            resultMap.put("status",1003);
+            resultMap.put("success",false);
+            resultMap.put("message","查询失败");
+        }
+        return  resultMap;
+    }
 
     private void mutilpartFileToFile(InputStream shopImg, File file){
         FileOutputStream outputStream = null ;

@@ -97,4 +97,28 @@ public class ShopResponseExcuttion extends BaseBean<ShopResponseExcuttion> {
     public void setStateInfo(String stateInfo) {
         this.stateInfo = stateInfo;
     }
+
+    public void setShopList(List<Shop> shopList) {
+        this.shopList = shopList;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public Shop getShop() {
+        return shop;
+    }
+
+    public void setShop(Shop shop) {
+        this.shop = shop;
+    }
+
+    public List<Shop> getShopList() {
+        return shopList;
+    }
 }
