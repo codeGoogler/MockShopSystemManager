@@ -246,13 +246,20 @@ public class ShopController {
 
 
 
-    @PostMapping(value = "/getShopList")
+    @GetMapping(value = "/getShopList")
     @ResponseBody
-    public HashMap<String,Object> getShopList(Shop shopCondition, int pageNo, int pageSize) {
+    public HashMap<String,Object> getShopList(HttpServletRequest httpServletRequest) {
         HashMap<String,Object> resultMap = new HashMap<>();
         try {
-            ShopResponseExcuttion shopResponseExcuttion = shopService.getShopList(shopCondition,pageNo,pageSize);
-            if(shopResponseExcuttion.getState() ==  ShopStateEnum.CHECK.getState()){
+            PersonInfo personInfo = new PersonInfo();
+            personInfo.setUserId(1l);
+            httpServletRequest.setAttribute("user",personInfo);
+            httpServletRequest.getSession().getAttribute("user");
+
+            Shop shopCondition = new Shop();
+            shopCondition.setOwner(personInfo);
+            ShopResponseExcuttion shopResponseExcuttion = shopService.getShopList(shopCondition,1,20);
+            if(shopResponseExcuttion.getState() ==  ShopStateEnum.SUCCESS.getState()){
                 resultMap.put("status",200);
                 resultMap.put("success",true);
                 resultMap.put("shopList",shopResponseExcuttion.getShopList());
@@ -264,7 +271,7 @@ public class ShopController {
         }catch (Exception e){
             resultMap.put("status",1003);
             resultMap.put("success",false);
-            resultMap.put("message","查询失败");
+            resultMap.put("message","查询异常："+e.getMessage());
         }
         return  resultMap;
     }
