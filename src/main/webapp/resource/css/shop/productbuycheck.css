@@ -1,0 +1,12 @@
+.row-productbuycheck {
+    border: 1px solid #999;
+    padding: .5rem;
+    border-bottom: none;
+}
+.row-productbuycheck:last-child {
+    border-bottom: 1px solid #999;
+}
+.productbuycheck-time {
+    white-space: nowrap;
+    overflow-x: scroll;
+}

@@ -1,0 +1,15 @@
+.row-award {
+    border: 1px solid #999;
+    padding: .5rem;
+    border-bottom: none;
+}
+.row-award:last-child {
+    border-bottom: 1px solid #999;
+}
+.award-name {
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.award-wrap a {
+    margin-right: 1rem;
+}

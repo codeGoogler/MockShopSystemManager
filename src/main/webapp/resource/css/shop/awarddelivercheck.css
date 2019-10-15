@@ -1,0 +1,12 @@
+.row-awarddeliver {
+    border: 1px solid #999;
+    padding: .5rem;
+    border-bottom: none;
+}
+.row-awarddeliver:last-child {
+    border-bottom: 1px solid #999;
+}
+.awarddeliver-time {
+    white-space: nowrap;
+    overflow-x: scroll;
+}

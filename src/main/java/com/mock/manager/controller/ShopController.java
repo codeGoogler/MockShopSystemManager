@@ -14,6 +14,9 @@ import com.mock.manager.utils.FileUtil;
 import com.mock.manager.utils.HttpServletRequestUtils;
 import com.mock.manager.utils.ImageUtil2;
 import com.mock.manager.utils.VertifyCodeUtils;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -38,6 +41,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/shop")
+@Api(tags = "店铺管理")
 public class ShopController {
 
     @Autowired
@@ -52,6 +56,7 @@ public class ShopController {
 
     @GetMapping(value = "/getShopById")
     @ResponseBody
+    @ApiOperation(value = "根据店铺id查询店铺信息",httpMethod = "GET")
     public HashMap<String,Object> getShopById(HttpServletRequest httpServletRequest){
         HashMap<String,Object> hashMap = new HashMap<>();
         // 得到店铺的id
@@ -76,8 +81,11 @@ public class ShopController {
         return hashMap;
     }
 
+
+
     @RequestMapping(value = "/updateShop",method = RequestMethod.POST)
     @ResponseBody
+    @ApiOperation(value = "跟新一个店铺",httpMethod = "POST")
     public HashMap<String,Object> updateShop(HttpServletRequest httpServletRequest){
         System.out.print("httpServletRequest: " +httpServletRequest+"\n");
         HashMap<String,Object> hashMap = new HashMap<>();
@@ -143,8 +151,10 @@ public class ShopController {
         return hashMap;
     }
 
+
     @RequestMapping(value = "/regisitShop",method = RequestMethod.POST)
     @ResponseBody
+    @ApiOperation(value = "增加店铺",httpMethod = "POST")
     public HashMap<String,Object> insertShop(HttpServletRequest httpServletRequest){
         System.out.print("httpServletRequest: " +httpServletRequest+"\n");
         HashMap<String,Object> hashMap = new HashMap<>();
@@ -223,6 +233,7 @@ public class ShopController {
 
     @RequestMapping(value = "/getShopInitInfo",method = RequestMethod.GET)
     @ResponseBody
+    @ApiOperation(value = "得到店铺信息",httpMethod = "GET")
     public HashMap<String,Object> getShopInitInfo(){
         HashMap<String,Object> resultMap = new HashMap<>();
         ShopCategory shopCategoryCondition = new ShopCategory();
@@ -244,7 +255,32 @@ public class ShopController {
          return  resultMap;
     }
 
-
+    //获取当前的店铺管理的信息
+    @GetMapping(value = "/getShopManagerInfo")
+    @ResponseBody
+    @ApiOperation(value = "获取当前的店铺管理的信息",httpMethod = "GET")
+    public HashMap<String,Object> getShopManagerInfo(HttpServletRequest httpServletRequest){
+        HashMap<String,Object> resultMap = new HashMap<>();
+        int  shopId = HttpServletRequestUtils.getInt(httpServletRequest,"shopId");
+        if(shopId <= 0){
+           Object objShop =  httpServletRequest.getSession().getAttribute("currentShop");
+           if(objShop == null){
+               resultMap.put("direct",true);
+               resultMap.put("url","/MockShopSystemManager/shop/getShopList");
+           }else{
+               Shop currentShop = (Shop) objShop;
+               resultMap.put("direct",false);
+               resultMap.put("shopId",currentShop.getShopId());
+           }
+        }else {
+            Shop currentShop = new Shop();
+            currentShop.setShopId(shopId);
+            resultMap.put("direct",false);
+            resultMap.put("shopId",currentShop.getShopId());
+            httpServletRequest.getSession().setAttribute("currentShop",currentShop);
+        }
+        return  resultMap;
+    }
 
     @GetMapping(value = "/getShopList")
     @ResponseBody

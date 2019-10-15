@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+@CHARSET "UTF-8";
+@import url("../base/common.css");
+#addNewProduct {
+	width: 25%;
+
+}
+#addNewProduct a {
+	color: #c72e2e;
+}
+#createProduct {
+	color: #c72e2e;
+	font-size: 120%;
+	text-decoration : underline;
+}
+p {
+	text-align: center;
+	font-size: 120%;
+	color: #716d6d;
+}
+.shopParams {
+	text-align: left;
+	font-size: 80%;
+	color: #716d6d;
+}
+table {
+	text-align: center;
+	font-size: 100%;
+	border-collapse: collapse;
+	border: solid #000;
+	border-width: 0.1em 0 0 0.1em;
+	margin: 0 auto;
+}
+table tr td {
+	border: solid #000;
+	border-width:0 0.1em 0.1em 0;
+	text-align: center;
+}
+table tr td a {
+	display: inline-block; 
+	color: #808080;
+}
+table tr td a:hover {
+	color: red;
+}
+table input {
+	font-size: 80%;
+}
+
+#blackBackground {
+	background-color: black;
+	position: absolute;
+	width: 100%;
+	height: auto !important;
+	text-align: center;
+	margin-bottom: -10%;
+	padding-bottom: 10%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+#productMessageDirect {
+	position: relative;
+	_height: 90%; 
+	min-height: 90%; 
+	line-height: 100%;
+	background-color: white;
+	padding: 0.2em 0 0 0 ;
+	margin: 10% auto;
+	padding-bottom: 6%;
+	text-align: left;
+}
+#content {
+	margin: 5% 0 5% 0;
+}
+#productMessageDirect p {
+	margin: 0.2em 0 0.2em 0.2em;
+}
+#productMessageDirect p a {
+	display: inline;
+}
+#productMessageDirect p big {
+	color: #804040;
+}
+#productMessageDirect p textarea {
+	width: 80%;
+	height: 4em;
+}
+#exit {
+	position: relative;
+	margin: 0.5em;
+	float: right;
+}
+
+#Pagination {
+	border: none;
+	margin: 0 auto;
+	text-align: center;
+}
+#Pagination td  {
+	padding: 0 0.5em 0 0;
+	display: inline;
+	font-size: 80%;
+	border: none;
+}
+#Pagination td a {
+	display: inline;
+}
+p span {
+	margin: 0 0.4em 0 0;
+}

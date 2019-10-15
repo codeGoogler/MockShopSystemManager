@@ -7,15 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23b2e93e-02ab-42eb-8c48-3dcc538f5123" name="Default Changelist" comment="修改一些配置，正常访问controller层的代码2">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MockYuerSystemManager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MockYuerSystemManager.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/shop/awarddelivercheck.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/shop/awardmanage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/shop/base/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/shop/base/jquery.confirm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/shop/base/jquery.validate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/shop/model/productDirector.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/shop/productbuycheck.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/shop/productcategorymanage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/shop/productmanage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/shop/shopauthmanage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/shop/shoplist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/shop/shopmanage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/shop/usershopcheck.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/shop/shoplist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MockYuerSystemManager_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MockYuerSystemManager_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readDescript/aa" beforeDir="false" afterPath="$PROJECT_DIR$/readDescript/相关语句的建设" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.pattern_IS_UNDEFINED/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/log.pattern_IS_UNDEFINED/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mock/manager/enums/ShopStateEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mock/manager/enums/ShopStateEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mock/manager/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mock/manager/service/ShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/ShopServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/ShopMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/ShopMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/js/shop/operate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/shop/operate.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,6 +37,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/MockShopSystemManager$ShopServiceTest_getShopList.ic" NAME="ShopServiceTest.getShopList Coverage Results" MODIFIED="1570780665712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.mock.manager.service.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/MockYuerSystemManager$AreaDaoTest_testQueryAreaAll.ic" NAME="AreaDaoTest.testQueryAreaAll Coverage Results" MODIFIED="1568191493563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.mock.manager.dao.*</FILTER>
     </SUITE>
@@ -50,55 +64,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/AreaMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="71" lean-forward="true" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/ShopMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2839">
-              <caret line="220" column="5" selection-start-line="146" selection-start-column="83" selection-end-line="220" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/dao/ShopCategoryDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/AreaController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" selection-start-line="20" selection-end-line="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/ShopService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="361">
+              <caret line="284" column="37" selection-start-line="284" selection-start-column="26" selection-end-line="284" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,37 +76,78 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/AreaServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="460">
+              <caret line="37" column="107" selection-start-line="37" selection-start-column="107" selection-end-line="37" selection-end-column="107" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/ShopServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/shop/shoplist.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/shop/base/common.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/shop/shopauthmanage.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/shop/shoplist.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopAdminController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="64" column="36" lean-forward="true" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/dto/ShopResponseExcuttion.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="53" column="41" lean-forward="true" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+            <state relative-caret-position="335">
+              <caret line="219" column="34" lean-forward="true" selection-start-line="219" selection-start-column="34" selection-end-line="219" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/enums/ShopStateEnum.java">
+        <entry file="jar://E:/englis_install/.m2/repository/org/springframework/spring-beans/4.3.4.RELEASE/spring-beans-4.3.4.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="115">
+              <caret line="1120" column="13" lean-forward="true" selection-start-line="1120" selection-start-column="13" selection-end-line="1120" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/utils/HttpServletRequestUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="25" column="30" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -157,13 +167,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>img</find>
-      <find>图片的相对路径</find>
-      <find>addShopAwar</find>
-      <find>getFileExtension</find>
-      <find>thumbnail</find>
-      <find>shopAwar</find>
-      <find>ShopResponseExcuttion</find>
       <find>label</find>
       <find>.label</find>
       <find>MockYuerSystemManager</find>
@@ -171,7 +174,6 @@
       <find>ServletContext</find>
       <find>kaptcha.noise.color</find>
       <find>kaptcha_img</find>
-      <find>shop_category_id</find>
       <find>VertifyCodeUtils</find>
       <find>prioriy</find>
       <find>updateShop</find>
@@ -183,10 +185,18 @@
       <find>getShopById</find>
       <find>alter</find>
       <find>tab_shop_cate_gory</find>
-      <find>tab_shop_category</find>
       <find>shop_addr</find>
       <find>shop_desc</find>
       <find>queryShopInfoById</find>
+      <find>quertShopInfoByIdShopMap</find>
+      <find>queryTotleCount</find>
+      <find>areaId</find>
+      <find>pageSize</find>
+      <find>tab_shop_category</find>
+      <find>shop_category_id</find>
+      <find>shopResponseExcuttion</find>
+      <find>shopController</find>
+      <find>getShopList</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -198,9 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/service/AreaService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/AreaServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/controller/AreaController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mock/manager/dao/AreaDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mock/manager/service/AreaServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/resource/mapper/AreaMapper.xml" />
@@ -209,7 +216,6 @@
         <option value="$PROJECT_DIR$/readDescript/在springboot或者ssm框架或者类似的框架中VO、DTO、DO、PO的概念、区别和用处.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/entry/Shop.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/utils/PathUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/dto/ShopResponseExcuttion.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/utils/ImageUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/utils/HttpServletRequestUtils.java" />
         <option value="$PROJECT_DIR$/readDescript/MySql的两种引擎.md" />
@@ -235,20 +241,24 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/controller/localAuthCOmtroller.java" />
         <option value="$PROJECT_DIR$/readDescript/idea启动tomcat访问页面中文乱码.md" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/entry/Area.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/dao/ShopDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/entry/PersonInfo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mock/manager/service/ShopServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mock/manager/dao/ShopDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/js/comment/comment.js" />
         <option value="$PROJECT_DIR$/readDescript/aa" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/js/shop/operate.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopController.java" />
-        <option value="$PROJECT_DIR$/src/main/resource/mapper/ShopMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/service/ShopService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/enums/ShopStateEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/dao/ShopDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resource/mapper/ShopMapper.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mock/manager/dao/ShopDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/dto/ShopResponseExcuttion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/service/ShopService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mock/manager/service/ShopServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/ShopServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/utils/PageCalculator.java" />
+        <option value="$PROJECT_DIR$/log.pattern_IS_UNDEFINED/error.log" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resource/js/shop/shoplist.js" />
       </list>
     </option>
   </component>
@@ -279,9 +289,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-468" />
-    <option name="y" value="365" />
-    <option name="width" value="1940" />
+    <option name="x" value="3" />
+    <option name="y" value="38" />
+    <option name="width" value="1936" />
     <option name="height" value="1042" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -331,7 +341,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -340,10 +349,133 @@
               <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MockShopSystemManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MockShopSystemManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -362,23 +494,24 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\bazyu\SoureTreePro\MockShopSystemManager\src\main\webapp\WEB-INF\html\shop" />
+      <recent name="F:\Java_Prpject\ssm_pro\f2\MockShopSystemManager\src\main\webapp\WEB-INF\html\shop" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.mock.manager.service" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Java_Prpject\ssm_pro\f2\MockShopSystemManager\src\main\webapp\WEB-INF\html" />
-      <recent name="F:\Java_Prpject\ssm_pro\f2\MockShopSystemManager\src\main\resource" />
-      <recent name="F:\Java_Prpject\ssm_pro\f2\MockShopSystemManager\src\main\java\com\mock\manager\utils" />
-      <recent name="F:\Java_Prpject\ssm_pro\f2\MockShopSystemManager\src\main\java\com\mock\manager\entry" />
-      <recent name="D:\bazyu\MockYuerSystemManager\src\main\resource\spring" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.mock.manager.service" />
       <recent name="com.mock.manager.dao" />
       <recent name="com.mock.manager.utils" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Java_Prpject\ssm_pro\f2\MockShopSystemManager\src\main\webapp\WEB-INF\html\shop" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\bazyu\SoureTreePro\MockShopSystemManager\src\main\webapp\resource\js\shop" />
+      <recent name="D:\bazyu\SoureTreePro\MockShopSystemManager\src\main\webapp\resource\css" />
+      <recent name="F:\Java_Prpject\ssm_pro\f2\MockShopSystemManager\src\main\webapp\WEB-INF\html" />
+      <recent name="F:\Java_Prpject\ssm_pro\f2\MockShopSystemManager\src\main\resource" />
+      <recent name="F:\Java_Prpject\ssm_pro\f2\MockShopSystemManager\src\main\java\com\mock\manager\utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -472,6 +605,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShopDaoTest.getShopList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MockYuerSystemManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mock.manager.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mock.manager.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.mock.manager.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="getShopList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShopDaoTest.queryShopInfoById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MockYuerSystemManager" />
       <extension name="coverage">
@@ -488,7 +637,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopServiceTest.addShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShopServiceTest.getShopList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MockYuerSystemManager" />
       <extension name="coverage">
         <pattern>
@@ -498,23 +647,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.mock.manager.service" />
       <option name="MAIN_CLASS_NAME" value="com.mock.manager.service.ShopServiceTest" />
-      <option name="METHOD_NAME" value="addShop" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShopServiceTest.addShop2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MockYuerSystemManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mock.manager.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mock.manager.service" />
-      <option name="MAIN_CLASS_NAME" value="com.mock.manager.service.ShopServiceTest" />
-      <option name="METHOD_NAME" value="addShop2" />
+      <option name="METHOD_NAME" value="getShopList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -704,20 +837,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ShopServiceTest.addShop" />
-      <item itemvalue="JUnit.ShopServiceTest.addShop2" />
       <item itemvalue="JUnit.ShopCategoryDaoTest.testShopCategoryDao" />
       <item itemvalue="JUnit.ShopDaoTest.queryShopInfoById" />
       <item itemvalue="JUnit.ShopServiceTest.updateShopTest" />
+      <item itemvalue="JUnit.ShopDaoTest.getShopList" />
+      <item itemvalue="JUnit.ShopServiceTest.getShopList" />
       <item itemvalue="Tomcat Server.Unnamed" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShopServiceTest.getShopList" />
+        <item itemvalue="JUnit.ShopDaoTest.getShopList" />
         <item itemvalue="JUnit.ShopServiceTest.updateShopTest" />
         <item itemvalue="JUnit.ShopDaoTest.queryShopInfoById" />
         <item itemvalue="JUnit.ShopCategoryDaoTest.testShopCategoryDao" />
-        <item itemvalue="JUnit.ShopServiceTest.addShop2" />
-        <item itemvalue="JUnit.ShopServiceTest.addShop" />
       </list>
     </recent_temporary>
   </component>
@@ -745,6 +878,9 @@
       <workItem from="1570009914390" duration="3592000" />
       <workItem from="1570103749640" duration="29544000" />
       <workItem from="1570455421560" duration="1196000" />
+      <workItem from="1570684755586" duration="3490000" />
+      <workItem from="1570689080316" duration="35432000" />
+      <workItem from="1571018296565" duration="15087000" />
     </task>
     <task id="LOCAL-00001" summary="提交了一个server的配置，增加简单用例的controller">
       <created>1568265998382</created>
@@ -767,43 +903,57 @@
       <option name="project" value="LOCAL" />
       <updated>1568280500362</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="提交getShopList代码">
+      <created>1570789929679</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570789929679</updated>
+    </task>
+    <task id="LOCAL-00005" summary="修改一些配置，正常访问controller层的代码2">
+      <created>1570876436016</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570876436016</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ShopServiceTest_updateShopTest - 2019.10.04 at 13h 47m 19s.xml">
-      <configuration name="ShopServiceTest.updateShopTest" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_getShopList - 2019.10.11 at 16h 28m 16s.xml">
+      <configuration name="ShopServiceTest.getShopList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_updateShopTest - 2019.10.04 at 13h 53m 04s.xml">
-      <configuration name="ShopServiceTest.updateShopTest" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_getShopList - 2019.10.11 at 16h 28m 48s.xml">
+      <configuration name="ShopServiceTest.getShopList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_updateShopTest - 2019.10.04 at 13h 53m 16s.xml">
-      <configuration name="ShopServiceTest.updateShopTest" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_getShopList - 2019.10.11 at 16h 29m 17s.xml">
+      <configuration name="ShopServiceTest.getShopList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_updateShopTest - 2019.10.04 at 13h 54m 13s.xml">
-      <configuration name="ShopServiceTest.updateShopTest" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_getShopList - 2019.10.11 at 16h 29m 39s.xml">
+      <configuration name="ShopServiceTest.getShopList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_updateShopTest - 2019.10.04 at 13h 58m 35s.xml">
-      <configuration name="ShopServiceTest.updateShopTest" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_getShopList - 2019.10.11 at 16h 34m 05s.xml">
+      <configuration name="ShopServiceTest.getShopList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_updateShopTest - 2019.10.04 at 13h 59m 17s.xml">
-      <configuration name="ShopServiceTest.updateShopTest" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_getShopList - 2019.10.11 at 16h 51m 44s.xml">
+      <configuration name="ShopServiceTest.getShopList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_updateShopTest - 2019.10.04 at 13h 59m 57s.xml">
-      <configuration name="ShopServiceTest.updateShopTest" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_getShopList - 2019.10.11 at 17h 11m 51s.xml">
+      <configuration name="ShopServiceTest.getShopList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_updateShopTest - 2019.10.04 at 14h 00m 23s.xml">
-      <configuration name="ShopServiceTest.updateShopTest" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_getShopList - 2019.10.11 at 17h 12m 42s.xml">
+      <configuration name="ShopServiceTest.getShopList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_updateShopTest - 2019.10.04 at 14h 01m 45s.xml">
-      <configuration name="ShopServiceTest.updateShopTest" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_getShopList - 2019.10.11 at 17h 13m 52s.xml">
+      <configuration name="ShopServiceTest.getShopList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_updateShopTest - 2019.10.04 at 14h 03m 46s.xml">
-      <configuration name="ShopServiceTest.updateShopTest" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_getShopList - 2019.10.12 at 17h 09m 44s.xml">
+      <configuration name="ShopServiceTest.getShopList" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249228000" />
+    <option name="totallyTimeSpent" value="319723000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -817,7 +967,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8634812" visible="true" weight="0.15191898" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8634812" visible="true" weight="0.16257995" />
       <window_info id="Structure" order="1" sideWeight="0.5019305" side_tool="true" weight="0.0" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -828,16 +978,16 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4969743" weight="0.32935154" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49848714" weight="0.34982935" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.9285714" visible="true" weight="0.21258135" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.86727077" weight="0.4186551" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.92963755" visible="true" weight="0.35683298" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.8662047" weight="0.36876357" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.6959153" weight="0.03253796" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.86913764" weight="0.55119455" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.071428575" side_tool="true" visible="true" weight="0.21258135" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.69062024" weight="0.32935154" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.86913764" weight="0.10303687" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.07036247" side_tool="true" weight="0.09978308" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.68976545" weight="0.3286334" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" sideWeight="0.86913764" weight="0.37372014" />
       <window_info anchor="bottom" id="Spring" order="14" sideWeight="0.49848714" weight="0.18771331" />
       <window_info anchor="bottom" id="Application Servers" order="15" sideWeight="0.49848714" weight="0.49658704" />
@@ -845,9 +995,9 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.015991472" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49828768" visible="true" weight="0.015991472" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Coverage" order="6" side_tool="true" weight="0.11673774" />
+      <window_info anchor="right" id="Coverage" order="6" sideWeight="0.5017123" side_tool="true" visible="true" weight="0.015991472" />
       <window_info anchor="right" id="Palette" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.19440243" />
@@ -909,6 +1059,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交了一个server的配置，增加简单用例的controller" />
     <MESSAGE value="修改一些配置，正常访问controller层的代码" />
+    <MESSAGE value="提交getShopList代码" />
     <MESSAGE value="修改一些配置，正常访问controller层的代码2" />
     <option name="LAST_COMMIT_MESSAGE" value="修改一些配置，正常访问controller层的代码2" />
   </component>
@@ -925,307 +1076,36 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/ShopService.java</url>
-          <line>31</line>
+          <line>32</line>
           <properties class="com.mock.manager.service.ShopService" method="insertShop" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/mock/manager/service/ShopServiceTest.java</url>
-          <line>123</line>
+          <line>126</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopController.java</url>
-          <line>56</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/ShopServiceImpl.java</url>
+          <line>46</line>
           <properties />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopController.java</url>
-          <line>54</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/ShopServiceImpl.java</url>
+          <line>64</line>
           <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/englis_install/.m2/repository/org/springframework/spring-aop/4.3.4.RELEASE/spring-aop-4.3.4.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="178" column="47" lean-forward="true" selection-start-line="178" selection-start-column="47" selection-end-line="178" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/englis_install/.m2/repository/com/github/penggle/kaptcha/2.3.2/kaptcha-2.3.2.jar!/com/google/code/kaptcha/Constants.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="41" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/watermark.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="90" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/localAuthCOmtroller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="177" column="18" lean-forward="true" selection-start-line="177" selection-start-column="18" selection-end-line="177" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/utils/VertifyCodeUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="90" selection-start-line="39" selection-start-column="90" selection-end-line="39" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/Area.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="e#1244#1245#0" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/ShopCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/AreaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/utils/FileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="68" column="33" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/dao/ShopDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/service/ShopServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/PersonInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/englis_install/.m2/repository/org/springframework/spring-web/4.3.4.RELEASE/spring-web-4.3.4.RELEASE.jar!/org/springframework/web/bind/annotation/GetMapping.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/ShopCategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/ShopCategoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/comment/comment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readDescript/记错记录.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readDescript/相关的ssm的配置.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-756">
-            <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readDescript/数据库连接注意事项.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readDescript/推荐一个jar包搜索仓库.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readDescript/在springboot或者ssm框架或者类似的框架中VO、DTO、DO、PO的概念、区别和用处.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readDescript/创建数据库.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-790" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readDescript/SSM框架的8个重要配置文件讲解.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readDescript/MySql的两种引擎.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readDescript/idea启动tomcat访问页面中文乱码.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="689">
-            <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readDescript/idea中找不到xml文件的解决方法.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="349">
-            <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readDescript/相关语句的建设">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="619">
           <caret line="95" column="28" lean-forward="true" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/ShopCategoryMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -1243,27 +1123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/dao/ShopDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/AreaMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="71" lean-forward="true" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/AreaController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1271,20 +1130,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/dao/ShopCategoryDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/PersonInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="102">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/ShopService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/ShopCategoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="37" />
+        <state relative-caret-position="374">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/dao/ShopCategoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/Area.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="285" column="19" selection-start-line="285" selection-start-column="19" selection-end-line="285" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#10398#10399#0" expanded="true" />
+            <element signature="e#10430#10431#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1368">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/AreaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/enums/ShopStateEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/entry/BaseBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/dao/ShopDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/service/AreaServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/dto/ShopResponseExcuttion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="120" column="22" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+          <folding>
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#2052#2053#0" expanded="true" />
+            <element signature="e#2094#2095#0" expanded="true" />
+            <element signature="e#2146#2147#0" expanded="true" />
+            <element signature="e#2186#2187#0" expanded="true" />
+            <element signature="e#2215#2216#0" expanded="true" />
+            <element signature="e#2243#2244#0" expanded="true" />
+            <element signature="e#2282#2283#0" expanded="true" />
+            <element signature="e#2316#2317#0" expanded="true" />
+            <element signature="e#2345#2346#0" expanded="true" />
+            <element signature="e#2372#2373#0" expanded="true" />
+            <element signature="e#2410#2411#0" expanded="true" />
+            <element signature="e#2442#2443#0" expanded="true" />
+            <element signature="e#2481#2482#0" expanded="true" />
+            <element signature="e#2512#2513#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/englis_install/.m2/repository/org/springframework/spring-aop/4.3.4.RELEASE/spring-aop-4.3.4.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="178" selection-start-line="178" selection-end-line="178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/englis_install/.m2/repository/org/springframework/spring-aop/4.3.4.RELEASE/spring-aop-4.3.4.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
         </state>
       </provider>
     </entry>
@@ -1295,38 +1271,195 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/dao/ShopDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="38" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/ShopMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+        <state relative-caret-position="468">
+          <caret line="122" column="82" lean-forward="true" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mock/manager/service/ShopServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2839">
-          <caret line="220" column="5" selection-start-line="146" selection-start-column="83" selection-end-line="220" selection-end-column="5" />
+        <state relative-caret-position="110">
+          <caret line="143" column="78" lean-forward="true" selection-start-line="143" selection-start-column="78" selection-end-line="143" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/dto/ShopResponseExcuttion.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/ShopService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="53" column="41" lean-forward="true" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/enums/ShopStateEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="172">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/service/impl/ShopServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="54" column="98" selection-start-line="54" selection-start-column="98" selection-end-line="54" selection-end-column="98" />
+          <folding>
+            <element signature="e#6001#6002#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/utils/PageCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/watermark.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/ShopCategoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/AA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/utils/ImageUtil2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="116" column="1" selection-start-line="15" selection-end-line="116" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/utils/ImageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/AreaMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-service.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/spring/spring-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.pattern_IS_UNDEFINED/error.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.pattern_IS_UNDEFINED/info.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.pattern_IS_UNDEFINED/debug.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/utils/HttpServletRequestUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="219" column="34" lean-forward="true" selection-start-line="219" selection-start-column="34" selection-end-line="219" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/englis_install/.m2/repository/org/springframework/spring-beans/4.3.4.RELEASE/spring-beans-4.3.4.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="1120" column="13" lean-forward="true" selection-start-line="1120" selection-start-column="13" selection-end-line="1120" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="64" column="36" lean-forward="true" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/shop/shoplist.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/shop/shopauthmanage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/shop/base/common.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mock/manager/controller/ShopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="284" column="37" selection-start-line="284" selection-start-column="26" selection-end-line="284" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="37" column="107" selection-start-line="37" selection-start-column="107" selection-end-line="37" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/shop/shoplist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>

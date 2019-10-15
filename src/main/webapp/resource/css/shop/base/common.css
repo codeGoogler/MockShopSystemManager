@@ -1,0 +1,303 @@
+@CHARSET "UTF-8";
+
+@CHARSET "GB2312";
+
+body {
+	margin: 0 auto;
+	font-family: "Microsoft YaHei" ! important;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+table {
+	margin: 0 auto;
+	width: 100%;
+}
+
+input {
+	
+}
+
+#myShop {
+	margin: 0.2em 0 0.2em 0;
+	width: 100%;
+}
+
+#myShop a {
+	width: 45%;
+	color: #c72e2e;
+	font-size: 120%;
+	text-decoration: underline;
+	float: left;
+}
+
+#myShop .help {
+	width: 40%;
+	color: #c72e2e;
+	font-size: 120%;
+	text-decoration: underline;
+	float: right;
+}
+
+#discountMsg {
+	margin: 0.2em 0 0.2em 0;
+}
+
+#discountMsg a {
+	color: #c72e2e;
+	font-size: 120%;
+	text-decoration: underline;
+}
+
+#username {
+	text-align: left;
+	height: 3em;
+	line-height: 3em;
+	font-size: 80%;
+	border-bottom: 0.1em solid #d3d2d1;
+}
+
+#username div {
+	float: left;
+}
+
+#changePassword {
+	display: inline;
+	color: #b50606;
+	float: right;
+	text-decoration: underline;
+	cursor: hand;
+}
+#bindAccount {
+	display: inline;
+	color: #b50606;
+	float: right;
+	text-decoration: underline;
+	cursor: hand;
+}
+
+.gap {
+	display: inline;
+	float: right;
+}
+
+#dologout {
+	display: inline;
+	color: #b50606;
+	float: right;
+	text-decoration: underline;
+	cursor: hand;
+}
+
+#shops div {
+	text-align: center;
+	height: 4em;
+	line-height: 4em;
+	border-bottom: 0.1em solid #d3d2d1;
+}
+
+#shops div span {
+	float: right;
+	position: absolute;
+}
+
+#shops div span b {
+	font-size: 80%;
+	color: red;
+}
+
+#shops div a {
+	color: #c72e2e;
+}
+
+.increase {
+	text-align: center;
+	height: 4em;
+	line-height: 4em;
+	border-bottom: 0.1em solid #d3d2d1;
+}
+
+.increase a {
+	font-size: 250%;
+	color: #006cff;
+}
+
+.increase a span {
+	font-size: 50%;
+	color: black;
+}
+
+.top {
+	width: 100%;
+	margin: 0 0 0.2em 0;
+	padding: 0 0 0 0.2em;
+	height: 1.5em;
+	line-height: 1.5em;
+	text-align: left;
+	font-size: 100%;
+	background-color: #c72e2e;
+}
+
+.top span {
+	float: left;
+	color: white;
+}
+
+.top a {
+	float: right;
+	display: inline;
+	margin: 0 0.2em 0 0;
+	color: white;
+}
+
+.top a:hover {
+	background-color: #d2d2d2;
+	color: #c72e2e;
+}
+
+#shopMessage {
+	text-align: left;
+}
+
+#shopMessage span {
+	margin: 0 0.5em 0 0;
+}
+
+#addProduct {
+	
+}
+
+#pictures {
+	width: 100%;
+	margin: 0;
+}
+
+#pictures div {
+	width: 25%;
+	float: left;
+	margin: 0 0 0.2em 0;
+	text-algin: center;
+}
+
+#pictures div div {
+	width: 95%;
+	height: 100%;
+	padding: 0;
+}
+
+#pictures div div a {
+	width: 100%;
+	height: 100%;
+}
+
+#pictures div div a:hover {
+	border: 0.08em solid #d3d2d1;
+}
+
+.container {
+	width: 100%;
+	text-align: center;
+	float: left;
+	margin: 0.5em 0 0 0;
+	border-top: 0.08em solid #d3d2d1;
+}
+
+.directorLink {
+	width: 40%;
+	height: 4em;
+	line-height: 4em;
+	display: inline-block;
+	text-align: center;
+	margin: 2em 0.4em 0.4em 0.4em;
+	background: url(../../images/control/button.png) no-repeat;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+	*display: inline;
+	zoom: 1;
+}
+
+.directorLink a {
+	color: white;
+}
+
+.directorLink a:hover {
+	background: url(../../images/control/onbutton.png) no-repeat;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.alert {
+	font-size: 100%;
+	color: red;
+	margin: 0 0 1em 0;
+}
+
+.disContainer {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.discount {
+	width: 100%;
+	margin: 0 auto;
+	height: 8em;
+	margin: 0.5em 0 0.5em 0;
+	text-align: left;
+}
+
+#submitTable {
+	width: 100%;
+}
+
+#submitTable img {
+	width: 100%;
+}
+
+#submitTable input {
+	font-size: 120%;
+}
+
+#submitTable textarea {
+	font-size: 120%;
+}
+
+.submit {
+	width: 30%;
+	height: 2em;
+	position: relative;
+	float: right;
+	margin: 0.2em 0.2em 0.2em 0;
+}
+
+#exit {
+	position: relative;
+	margin: 0.5em;
+	float: right;
+}
+
+#Pagination {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	color: #343434;
+}
+
+#Pagination td {
+	padding: 0 1.5em 0 0;
+	font-size: 100%;
+	display: inline;
+}
+
+#Pagination td a {
+	display: inline;
+}
+
+#recordNumber {
+	width: 100%;
+	font-size: 100%;
+	text-align: center;
+	color: #343434;
+}
