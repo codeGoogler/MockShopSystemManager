@@ -20,7 +20,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/localAuthCOmtroller")
-public class localAuthCOmtroller {
+public class LocalAuthController {
 
 
         Logger logger = LoggerFactory.getLogger(com.mock.manager.controller.AreaController.class);

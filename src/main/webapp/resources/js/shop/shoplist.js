@@ -1,14 +1,17 @@
 $(function () {
-
+	console.log("我国爱了")
+	console.log("isEdit: " +11111);
 	function getlist(e) {
 		$.ajax({
 			url : "/MockShopSystemManager/shop/getShopList",
+			        MockYuerSystemManager/shop/getShopList
 			type : "get",
 			dataType : "json",
 			success : function(data) {
 				if (data.success) {
 					handleList(data.shopList);
 					handleUser(data.user);
+					console.log("111111111111111111111111111111111111111111")
 				}
 			}
 		});
