@@ -13,3 +13,8 @@
 .shop-wrap a {
 
 }
+.pull_right{
+    text-align: right;
+    vertical-align:middle;
+    horiz-align: right;
+}

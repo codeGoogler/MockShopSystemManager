@@ -3,8 +3,7 @@ $(function () {
 	console.log("isEdit: " +11111);
 	function getlist(e) {
 		$.ajax({
-			url : "/MockShopSystemManager/shop/getShopList",
-			        MockYuerSystemManager/shop/getShopList
+			url : "/MockYuerSystemManager/shop/getShopList",
 			type : "get",
 			dataType : "json",
 			success : function(data) {
@@ -32,9 +31,9 @@ $(function () {
 
 	function goShop(status, id) {
 		if (status != 0 && status != -1) {
-			return '<a href="/myo2o/shop/shopmanage?shopId='+ id +'">进入</a>';
+			return '<a href="/MockYuerSystemManager/shopadmin/shopmanagement?shopId='+ id +'">进入</a>';
 		} else {
-			return '';
+			return '--';
 		}
 	}
 
